@@ -1,0 +1,247 @@
+.btn__hdr {
+    text-transform: uppercase;
+}
+
+.main__hdr-wrap {
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.main__logo{
+    padding-left: 2.7%;
+}
+.hdr__content {
+    width: 50%;
+    padding: 40px 2.7% 40px 0px;
+    box-sizing: border-box;
+}
+
+.hdr__contentwrap {
+    align-items: center;
+    justify-content: end;
+}
+
+/* main styles */
+.switch {
+    position: relative;
+    margin: 0 37px;
+}
+
+.switch input {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.switch input:checked {
+    z-index: 1;
+}
+
+.switch input:checked+label {
+    opacity: 1;
+    cursor: default;
+}
+
+.switch input:not(:checked)+label:hover {
+    opacity: 0.5;
+}
+
+.switch label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: 20px;
+    /* 125% */
+    text-transform: uppercase;
+    opacity: 0.33;
+    transition: opacity 0.25s ease;
+    cursor: pointer;
+}
+
+.switch .toggle-outside {
+    height: 100%;
+    border-radius: 2rem;
+    padding: 0.25rem;
+    overflow: hidden;
+    transition: 0.25s ease all;
+}
+
+.switch .toggle-inside {
+    border-radius: 5rem;
+    background: $color-black;
+    position: absolute;
+    transition: 0.25s ease all;
+}
+
+.switch--horizontal input {
+    height: 18px;
+    width: 33px;
+    left: 33px;
+    margin: 0;
+}
+
+.switch--horizontal label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: 23px;
+    /* 125% */
+    text-transform: uppercase;
+    display: inline-block;
+    width: 33px;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.switch--horizontal label:last-of-type {
+    margin-left: 35px;
+}
+
+.switch--horizontal .toggle-outside {
+    background: #d9d9d9;
+    position: absolute;
+    width: 33px;
+    left: 33px;
+    height: 18px;
+}
+
+.switch--horizontal .toggle-inside {
+    height: 14px;
+    width: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.switch--horizontal input:checked~.toggle-outside .toggle-inside {
+    left: 3px;
+}
+
+.switch--horizontal input~input:checked~.toggle-outside .toggle-inside {
+    left: 23px;
+}
+
+// humburger
+// nav button 
+
+.burger {
+    outline: none;
+    height: 12px;
+    width: 30px;
+    border: 0px;
+    padding: 0px;
+    background: transparent;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger:before,
+.burger:after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    background: $color-lightblack;
+    transition: all 250ms ease-out;
+    will-change: transform;
+    left: 0;
+}
+
+.burger:before {
+    transform: translateY(-7px);
+}
+
+.burger:after {
+    transform: translateY(7px);
+}
+
+// line transition
+
+.active.burger:before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.active.burger:after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.overflowhidden{
+    overflow: hidden;
+}
+.hdr__contentCls {
+    background: $color-black;
+    padding: 40px 2.7% 40px 0px;
+    .burger:before, .burger:after{
+        background: $color-white;
+    }
+    .switch--horizontal label {
+        color:$color-white;
+    }
+    .btn__hdr{
+        border: 1px solid $color-white;
+        color: $color-white;
+    }
+}
+.menu {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    background: $color-black;
+    border-radius: 0 0 0 100%;
+    right: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.header__menu{
+    height: calc(100vh - 115px);
+    width: 50%;
+    right: 0%;
+    top:116px;
+}
+
+.toggle__menu {
+    padding: 0 45px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.menu__list {
+    padding-bottom: 68px;
+
+    li {
+        a {
+            text-align: right;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 380;
+            line-height: 50px;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+            /* 125% */
+        }
+    }
+}
+
+.head__social {
+    ul {
+        margin-bottom: 20px;
+
+        li {
+            display: inline-block;
+            margin-left: 21px;
+        }
+    }
+}
+
+.head__email {
+    a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 380;
+        line-height: 26px
+    }
+}

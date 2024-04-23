@@ -20,6 +20,20 @@
     font-weight: 380;
     line-height: 30px;
     width: 36%;
-    float: right;
+    margin-left: auto; 
+    margin-right: 0;
     margin-bottom: 100px;
+}
+
+.vision_diamondImages{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.diamondshape{    
+    -webkit-mask-box-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/stampTiles.svg) 30 repeat;
+}
+
+.diamondshape:hover {
+    -webkit-mask-box-image: none;
 }

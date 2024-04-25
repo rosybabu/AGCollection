@@ -35,11 +35,15 @@ body{
 }
 
 .diamondshape{    
-    -webkit-mask-box-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/stampTiles.svg) 30 repeat;
+    -webkit-mask-box-image: url(./../svg/Diamond_Guidelines.svg) ;
+    mask-image: url(./../svg/Diamond_Guidelines.svg);    
+    mask-position: center;
+    mask-repeat: no-repeat;   
 }
 
 .diamondshape:hover {
     -webkit-mask-box-image: none;
+    mask-image: none;
 }
 
 .whatwevalue_para{
@@ -50,6 +54,10 @@ body{
 .visionimage_2, .visionimage_3{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.visionimage_2 img, .visionimage_3 img{
+    opacity: 0.7;
 }
 
 .vision_ourpartners{
@@ -63,3 +71,23 @@ body{
 }
 
 
+.value_div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+}
+
+.value_div p{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.value_smalltext{
+    display: inline-block;
+    width: 40%;
+    margin-left: auto; 
+    margin-right: 0;
+}

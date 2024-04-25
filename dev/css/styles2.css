@@ -1,5 +1,9 @@
 /* Styles for Other Pages */
 
+body{
+    background-image: url("/dev/images/bglight_blue.png");  
+}
+
 .visionh3{
     font-size: 80px;
     font-style: normal;
@@ -37,3 +41,25 @@
 .diamondshape:hover {
     -webkit-mask-box-image: none;
 }
+
+.whatwevalue_para{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.visionimage_2, .visionimage_3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vision_ourpartners{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vision_ourpartners{
+  background-image: url("/dev/images/bgdarkgreen.PNG");  
+  min-height: 500px;
+}
+
+

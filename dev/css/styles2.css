@@ -141,5 +141,32 @@ body{
     color: white;
     display: inline-block;
     vertical-align: middle;
-    padding-left: 40px;
+    padding-left: 20px;
+    opacity: 0.6;
+ }
+
+ .partners_name{
+    border-bottom: 1px solid #fff;
+    opacity: 0.6;
+    position: relative;
+ }
+
+ .partners_link{
+    color: white;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    padding: 7px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+ }
+
+ .arrowright{
+    /*background: url(./../images/arrowleft.png); */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: inline-block;
  }

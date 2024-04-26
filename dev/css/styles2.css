@@ -51,10 +51,19 @@ body{
     margin-bottom: 100px;
 }
 
-.visionimage_2, .visionimage_3{
+.visionimage_2{
     margin-top: 50px;
     margin-bottom: 50px;
     display: inline-block;
+}
+
+.visionimage_3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: inline-block;
+    background-image: url("/dev/images/bgdarkgreen.PNG");  
+    border-left: solid 30px #000;
+    border-right: solid 30px #000;
 }
 
 .visionimage_2 img, .visionimage_3 img{
@@ -63,7 +72,7 @@ body{
 
 .vision_ourpartners{
     margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background: #ccc;
     background-image: url("/dev/images/bgdarkgreen.PNG");  
     padding-top: 100px;
@@ -143,6 +152,11 @@ body{
     vertical-align: middle;
     padding-left: 20px;
     opacity: 0.6;
+    cursor: pointer;
+ }
+
+ .partners_namehead:hover{
+    opacity: 1;
  }
 
  .partners_name{

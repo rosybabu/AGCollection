@@ -1,0 +1,114 @@
+.contact__container {
+    background-color: $color-black;
+}
+
+.contact__containerwrap {
+    width: 77%;
+    margin: 0 auto;
+    padding: 100px 0px;
+
+    .contact__title {
+        width: 50%;
+        color: #362126;
+        font-family: "Neue Haas Grotesk Display Pro";
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100px;
+        /* 125% */
+        letter-spacing: -0.8px;
+        text-transform: capitalize;
+    }
+
+    .contact__form {
+        width: 50%;
+    }
+
+    select {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $color-lightblack;
+        font-family: "Area Normal";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        /* 214.286% */
+        color: $color-lightblack;
+        padding: 0px;
+    }
+
+}
+
+.input-parent {
+    position: relative;
+}
+
+input,
+textarea {
+    display: inline-block;
+    padding: 5px 0;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    background: transparent !important;
+    border: 0;
+    border-bottom: 1px solid $color-lightblack;
+    box-shadow: none;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    text-transform: capitalize;
+}
+
+input:focus+.form-label,
+input.has-value+.form-label,
+textarea:focus+.form-label,
+textarea.has-value+.form-label {
+    top: 5px;
+    font-size: 14px;
+}
+
+textarea:focus+.form-label,
+textarea.has-value+.form-label {
+    top: 30px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.effect-16~.form-label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "Area Normal";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 214.286% */
+    color: $color-lightblack;
+    pointer-events: none;
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+    text-transform: capitalize;
+}
+
+.wd-50 {
+    width: 50%;
+    float: left;
+}
+
+.wd-100 {
+    width: 100%;
+    clear: both;
+}
+.submit__btn {
+    border: 1px solid $color-lightblack;
+    border-radius: 30px;
+    float: right;
+}

@@ -1,0 +1,155 @@
+.footer__container {
+    width: 93%;
+    margin: 0 auto;
+
+    .footer__logo {
+        padding-bottom: 53px;
+
+        @include mobile {
+            padding-bottom: 24px;
+        }
+    }
+
+    .footer__col {
+        width: 33.33%;
+
+        @include mobile {
+            width: 50%;
+            padding-right: 15px;
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: $color-white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 26px;
+            padding-bottom: 10px;
+            white-space: normal;
+    word-break: break-word;
+        }
+    }
+
+}
+
+.ftr__social {
+    margin-bottom: 17px;
+
+    li {
+        display: inline-block;
+        margin-right: 22px;
+        transition: .1s ease;
+
+        &:hover {
+            svg {
+                fill: $color-white;
+            }
+
+            path {
+                fill: $color-black;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $color-black;
+    padding: 40px 0px 68px 0px;
+
+    .footer__newstitle {
+        color: $color-white;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 50px;
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+            padding-bottom: 24px;
+        }
+    }
+
+    .footer__newsinput {
+        position: relative;
+        cursor: pointer;
+
+
+        input[type="text"] {
+            border-radius: 100px;
+            border: 1px solid $color-white;
+            min-width: 381px;
+            margin-top: 0px;
+            padding: 10px 30px;
+            height: 35px;
+            background-color: $color-black;
+            color: $color-white;
+
+            @include mobile {
+                min-width: 192px;
+            }
+        }
+
+        ::placeholder {
+            color: $color-white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            /* 125% */
+            text-transform: uppercase;
+        }
+
+        ::-ms-input-placeholder {
+            /* Edge 12 -18 */
+            color: $color-white;
+        }
+
+    }
+}
+
+.input__chevron {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.footer__menu {
+    p {
+        text-transform: capitalize;
+    }
+}
+
+.top__footer {
+    padding-bottom: 39px;
+    border-bottom: 1px solid $color-white;
+}
+
+.bottom__footer {
+    padding-top: 39px;
+
+    .bottom__footerwrap {
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.footer__link {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.footer__newsflex {
+    @include mobile {
+        display: block !important;
+
+    }
+}

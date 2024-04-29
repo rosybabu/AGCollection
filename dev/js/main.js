@@ -1,16 +1,191 @@
 
 var main = {
- 
+
   //1.Function to implement humburger---HEADER
   humburger: function () {
     $('.burger').click(function () {
       $(this).toggleClass("active");
       $(this).parents(".hdr__menu-btn").find(".menu").toggleClass("header__menu");
       $(this).parents(".hdr__content").toggleClass("hdr__contentCls");
+      $(this).parents(".main__hdr-wrap").toggleClass("bg-blackhd");
       $('body').toggleClass("overflowhidden");
     })
   },
-  
+  //2.Function to implement slider
+  slider: function () {
+    var pagebanner = $('.homepage__sliderwrap');
+
+    pagebanner.slick({
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      speed: 5000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false,
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  },
+  //3.video
+  video: function () {
+    $(".btn__watchvideo").click(function (e) {
+      e.preventDefault();
+      $(".video-container").show();
+      $(".home__videorow").hide();
+      $("#myVideo")[0].play();
+      $(".video-pause").show();
+      $(".video-play").hide();
+    })
+    $(".videotoggle").click(function (e) {
+      e.preventDefault();
+      $(".video-container").hide();
+      $(".home__videorow").show();
+    })
+
+    var video = $("#myVideo")[0];
+    var progressBar = $("#progressBar");
+    var isDragging = false;
+    $(".video-pause").hide();
+    $("#playPauseBtn").click(function () {
+      if (video.paused) {
+        video.play();
+        $(".video-pause").show();
+        $(".video-play").hide();
+      } else {
+        video.pause();
+        $(".video-pause").hide();
+        $(".video-play").show();
+      }
+    });
+
+    $("#stopBtn").click(function () {
+      video.pause();
+      video.currentTime = 0;
+      $("#playPauseBtn").text("Play");
+    });
+    $(".video-unmute").hide();
+    $("#muteBtn").click(function () {
+      if (video.muted) {
+        video.muted = false;
+        $(".video-mute").show();
+        $(".video-unmute").hide();
+      } else {
+        video.muted = true;
+        $(".video-unmute").show();
+        $(".video-mute").hide();
+      }
+    });
+
+    progressBar.on("mousedown", function () {
+      isDragging = true;
+      video.pause();
+    });
+
+    $(document).on("mouseup", function () {
+      if (isDragging) {
+        isDragging = false;
+        var value = progressBar.val();
+        video.currentTime = (value * video.duration) / 100;
+        video.play();
+      }
+    });
+
+    progressBar.on("input", function () {
+      if (isDragging) {
+        var value = $(this).val();
+        video.currentTime = (value * video.duration) / 100;
+      }
+    });
+
+    video.addEventListener("timeupdate", function () {
+      if (!isDragging) {
+        var value = (100 / video.duration) * video.currentTime;
+        progressBar.val(value);
+      }
+    });
+  },
+  //4.Function to implement contactform validation
+  contactValidn: function () {
+    $("#contactForm").validate({
+      rules: {
+        contactFormName: {
+          required: true,
+          minlength: 2,
+          alphabetsnspace: true
+        },
+        contactFormCountry: {
+          required: true,
+          minlength: 2,
+          alphabetsnspace: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        contactFormPhone: {
+          required: true,
+          uaePhone: true
+        },
+        contactFormMessage:{
+          required:true
+        },
+        contactbroker:{
+          required:true,
+        },
+        contacthear:{
+          required:true,
+        },
+        contactinterest:{
+          required:true,
+        }
+      },
+      messages: {
+        contactFormName: {
+          required: main.getRequired(".contact-form #firstname"),
+          minlength: main.getminlength('.contact-form #firstname'),
+          alphabetsnspace: main.getalphabets('.contact-form #firstname'),
+        },
+        contactFormCountry: {
+          required: main.getRequired(".contact-form #contactFormCountry"),
+          minlength: main.getminlength('.contact-form #contactFormCountry'),
+          alphabetsnspace: main.getalphabets('.contact-form #contactFormCountry'),
+        },
+        email: {
+          required: main.getRequired(".contact-form .email"),
+        },
+        contactFormPhone: {
+          required: main.getRequired(".contact-form .contactFormPhone")
+        },
+        contactFormMessage:{
+          required: main.getRequired(".contact-form .contactFormMessage"),
+        },
+        contactbroker: {
+          required: main.getRequired(".contact-form .contactbroker")
+        },
+        contacthear:{
+          required: main.getRequired(".contact-form .contacthear"),
+        },
+        contactinterest:{
+          required: main.getRequired(".contact-form .contactinterest"),
+        }
+      }
+    });
+  },
   getminlength: function (selector) {
     return $(selector).attr('data-minLength');
   },
@@ -26,6 +201,9 @@ var main = {
 $(document).ready(function () {
   AOS.init();
   main.humburger();
+  main.slider();
+  main.video();
+  main.contactValidn();
   // phone number regex 
   $.validator.addMethod(
     "uaePhone",

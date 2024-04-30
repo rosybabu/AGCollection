@@ -3,99 +3,144 @@
 }
 
 .contact__containerwrap {
-    width: 77%;
+    width: 95%;
     margin: 0 auto;
     padding: 100px 0px;
 
     .contact__title {
         width: 50%;
-        color: #362126;
-        font-family: "Neue Haas Grotesk Display Pro";
-        font-size: 80px;
+        color: $color-white;
+        font-size: 100px;
         font-style: normal;
         font-weight: 400;
-        line-height: 100px;
-        /* 125% */
-        letter-spacing: -0.8px;
-        text-transform: capitalize;
+        line-height: 110px;
+        padding-top: 20px;
+        padding-bottom: 150px;
+        /* 110% */
     }
 
     .contact__form {
         width: 50%;
     }
 
+    .contact__details {
+        width: 50%;
+        color: $color-white;
+
+        p {
+            text-transform: capitalize;
+            color: $color-white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+
     select {
         background: transparent;
         border: none;
-        border-bottom: 1px solid $color-lightblack;
-        font-family: "Area Normal";
-        font-size: 14px;
+        border-bottom: 1px solid $color-white;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
-        /* 214.286% */
-        color: $color-lightblack;
+        color: $color-white;
         padding: 0px;
     }
 
-}
+    option {
+        color: $color-black;
+    }
 
-.input-parent {
-    position: relative;
-}
+    .input-parent {
+        position: relative;
+    }
 
-input,
-textarea {
-    display: inline-block;
-    padding: 5px 0;
-    margin: 10px 0 0 0;
+    input,
+    textarea {
+        display: inline-block;
+        font-size: 16px;
+        background: transparent !important;
+        border: 0;
+        border-bottom: 1px solid $color-lightblack;
+        box-shadow: none;
+        outline: none;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        text-transform: capitalize;
+    }
+
+    input:focus+.form-label,
+    input.has-value+.form-label,
+    textarea:focus+.form-label,
+    textarea.has-value+.form-label {
+        top: 5px;
+        font-size: 14px;
+    }
+
+    textarea:focus+.form-label,
+    textarea.has-value+.form-label {
+        top: 30px;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    
+input {
+    background: none;
     font-size: 16px;
-    background: transparent !important;
-    border: 0;
-    border-bottom: 1px solid $color-lightblack;
-    box-shadow: none;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-white;
+    height: auto;
+}
+
+input:focus {
     outline: none;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    text-transform: capitalize;
 }
 
-input:focus+.form-label,
-input.has-value+.form-label,
-textarea:focus+.form-label,
-textarea.has-value+.form-label {
-    top: 5px;
-    font-size: 14px;
+input:focus~label,
+input:valid~label {
+    top: 4px;
+    font-size: 10px;
+    color: $color-white;
 }
 
-textarea:focus+.form-label,
-textarea.has-value+.form-label {
-    top: 30px;
-}
+// input:focus~.bar:before {
+//     width: 320px;
+// }
 
-input:focus::-webkit-input-placeholder {
-    color: transparent;
-}
-
-.effect-16~.form-label {
+label {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: normal;
     position: absolute;
-    top: 50%;
-    left: 0px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: "Area Normal";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 214.286% */
-    color: $color-lightblack;
     pointer-events: none;
-    -webkit-transition: all 0.15s ease-out 0s;
-    transition: all 0.15s ease-out 0s;
-    text-transform: capitalize;
+    left: 15px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+
+.bar:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #242935;
+    transition: 300ms ease all;
+    left: 0%;
+}
 }
 
 .wd-50 {
@@ -107,8 +152,28 @@ input:focus::-webkit-input-placeholder {
     width: 100%;
     clear: both;
 }
-.submit__btn {
-    border: 1px solid $color-lightblack;
-    border-radius: 30px;
-    float: right;
+
+.contact__email {
+    padding: 10px 0px;
+}
+
+.group {
+    position: relative;
+    padding: 10px 10px;
+}
+.input__btn{
+    width: 200px;
+    position: relative;
+    padding-right: 0px;
+    input{
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid $color-white;
+        color:$color-white !important;
+        text-transform: uppercase;
+        padding: 4px 25px;
+        &:hover{
+            border: 1px solid $color-white;
+        }
+    }
 }

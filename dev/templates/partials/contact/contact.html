@@ -1,54 +1,60 @@
 <!-- contact -->
 <div class="contact__container">
     <div class="contact__containerwrap">
-         <div class="contact__title">Get in touch</div>
+        <div class="contact__title">Get in touch</div>
         <div class="contact__row d-flex">
-           <div class="contact__details">
-            <p>address line 1</p>
-            <p>address line 2</p>
-            <p>postcode</p>
-            <div class="contact__email">
-                info@alghuraircollection.com
+            <div class="contact__details">
+                <p>address line 1</p>
+                <p>address line 2</p>
+                <p>postcode</p>
+                <div class="contact__email">
+                    <a href="mailto: info@alghuraircollection.com"> info@alghuraircollection.com</a>
+                </div>
+                <div class="contact__phone">
+                    <a href="tel:+555 555 555">+555 555 555</a>
+                </div>
             </div>
-            <div class="contact__phone">
-                +555 555 555
-            </div>
-           </div>
             <div class="contact__form">
                 <form action="" class="contact-form" id="contactForm">
                     <div class="row__cls">
-                        <!-- first name -->
-                        <div class="wd-50 input-parent input-effect">
-                            <input type="text" class="form-control contactFormName effect-16" id="contactFormName"
-                                name="contactFormName" type="text" placeholder="" data-required="Name is required"
+                        <div class="wd-50 group">
+                            <!-- <input type="text" required="required"/> -->
+                            <input type="text" class=" contactFormName" id="contactFormName" name="contactFormName"
+                                type="text" placeholder="" data-required="Name is required"
                                 data-alphabetsnspace="Please Enter Only Letters"
-                                data-minLength="Your name must consist of at least 2 characters">
-                            <label class="form-label">full Name*</label>
+                                data-minLength="Your name must consist of at least 2 characters" required="required" />
+                            <span class="highlight"></span><span class="bar"></span>
+                            <label>Full name*</label>
                         </div>
+
                         <!-- email  -->
-                        <div class="wd-50 input-parent input-effect">
-                            <input type="email" class="form-control email effect-16" id="email" name="email"
-                                data-required="Email is required" placeholder="">
+                        <div class="wd-50 group">
+                            <input type="email" class="email" id="email" name="email" data-required="Email is required"
+                                placeholder="" required="required" />
+                            <span class="highlight"></span><span class="bar"></span>
                             <label class="form-label">Email*</label>
                         </div>
                         <!-- country -->
-                        <div class="wd-50 input-parent input-effect">
-                            <input type="text" class="form-control contactFormCountry effect-16" id="contactFormCountry"
+                        <div class="wd-50 group">
+                            <input type="text" class="contactFormCountry" id="contactFormCountry"
                                 name="contactFormCountry" type="text" placeholder="" data-required="Country is required"
                                 data-alphabetsnspace="Please Enter Only Letters"
-                                data-minLength="Country must consist of at least 2 characters">
-                            <label class="form-label">country*</label>
+                                data-minLength="Country must consist of at least 2 characters" required="required">
+                            <span class="highlight"></span><span class="bar"></span>
+                            <label class="form-label">Country*</label>
                         </div>
                         <!-- phone  -->
-                        <div class="wd-50 input-parent input-effect">
-                            <input type="number" class="form-control contactFormPhone effect-16" id="contactFormPhone"
-                                value="" name="contactFormPhone" placeholder="" data-required="Phone is required">
+                        <div class="wd-50 group">
+                            <input type="number" class="contactFormPhone " id="contactFormPhone" value=""
+                                name="contactFormPhone" placeholder="" data-required="Phone is required"
+                                required="required">
+                            <span class="highlight"></span><span class="bar"></span>
                             <label class="form-label">Phone number*</label>
                         </div>
                     </div>
                     <!-- broker  -->
-                    <div class="wd-100">
-                        <select class="form-control contactbroker" id="contactbroker" value="" name="contactbroker"
+                    <div class="wd-100 group">
+                        <select class="contactbroker" id="contactbroker" value="" name="contactbroker"
                             data-required="This is required">
                             <option value="">Are you a Broker*</option>
                             <option value="">Yes</option>
@@ -56,8 +62,8 @@
                         </select>
                     </div>
                     <!-- hear  -->
-                    <div class="wd-100">
-                        <select class="form-control contacthear" id="contacthear" value="" name="contacthear"
+                    <div class="wd-100 group">
+                        <select class=" contacthear" id="contacthear" value="" name="contacthear"
                             data-required="This is required">
                             <option value="">How did you hear about us?*</option>
                             <option value=""> Al Ghurair Site</option>
@@ -70,8 +76,8 @@
                         </select>
                     </div>
                     <!-- interested -->
-                    <div class="wd-100">
-                        <select class="form-control contactinterest" id="contactinterest" value=""
+                    <div class="wd-100 group">
+                        <select class=" contactinterest" id="contactinterest" value=""
                             name="contactinterest" data-required="This is required">
                             <option value="">I am interested in*</option>
                             <option value="">2 Bedroom Apartment</option>
@@ -81,15 +87,23 @@
                         </select>
                     </div>
                     <!-- message  -->
-                    <div class="wd-100 msgBox  input-parent input-effect">
-                        <textarea placeholder="" class="form-control message contactFormMessage effect-16"
+                    <div class="wd-100 msgBox group">
+                        <textarea placeholder="" class="message contactFormMessage effect-16"
                             id="contactFormMessage " name="contactFormMessage"
                             data-required="Message is required"></textarea>
                         <label class="form-label">Message*</label>
                     </div>
-                    <div class="wd-100">
+                    <div class="group input__btn">
                         <input type="submit" class="btn btn-medium btn-transparent text-black submit__btn"
                             value="submit">
+                        <div class="button__hover">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.9473 10.3413L25.697 17.094L18.9473 23.8438" stroke="#fff"
+                                    stroke-miterlimit="10"></path>
+                                <path d="M25.697 17.0938H8.69067" stroke="#fff" stroke-miterlimit="10"></path>
+                            </svg>
+                        </div>
                     </div>
             </div>
             </form>

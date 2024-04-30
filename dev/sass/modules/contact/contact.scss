@@ -106,11 +106,13 @@
         font-size: 14px;
     }
 
-    textarea:focus+.form-label,
-    textarea.has-value+.form-label {
-        top: 30px;
+    .msgBox textarea:focus~.form-label,
+    .msgBox textarea.has-value~.form-label,.msgBox textarea:valid~label {
+        top: 0px;
     }
-
+ .msgBox .form-label{
+        top: 35px;
+    }
     input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {
         color: transparent;
     }
@@ -130,9 +132,7 @@
     }
 
     input:focus~label,
-    input:valid~label ,
-    textarea:focus~label,
-    textarea:valid~label{
+    input:valid~label{
         top: 4px;
         font-size: 10px;
         color: $color-white;

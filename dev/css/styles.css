@@ -1523,9 +1523,12 @@ input[type="range"]:focus::-moz-range-thumb {
   top: 5px;
   font-size: 14px;
 }
-.contact__containerwrap textarea:focus + .form-label,
-.contact__containerwrap textarea.has-value + .form-label {
-  top: 30px;
+.contact__containerwrap .msgBox textarea:focus ~ .form-label,
+.contact__containerwrap .msgBox textarea.has-value ~ .form-label, .contact__containerwrap .msgBox textarea:valid ~ label {
+  top: 0px;
+}
+.contact__containerwrap .msgBox .form-label {
+  top: 35px;
 }
 .contact__containerwrap input:focus::-webkit-input-placeholder, .contact__containerwrap textarea:focus::-webkit-input-placeholder {
   color: transparent;
@@ -1543,9 +1546,7 @@ input[type="range"]:focus::-moz-range-thumb {
   outline: none;
 }
 .contact__containerwrap input:focus ~ label,
-.contact__containerwrap input:valid ~ label,
-.contact__containerwrap textarea:focus ~ label,
-.contact__containerwrap textarea:valid ~ label {
+.contact__containerwrap input:valid ~ label {
   top: 4px;
   font-size: 10px;
   color: #ffffff;

@@ -107,9 +107,10 @@ textarea {
   clear: both;
 }
 
-.error {
-  font-size: 12px;
-  color: red;
+label.error {
+  font-size: 12px !important;
+  color: red !important;
+  position: initial !important;
 }
 
 .hidden {
@@ -1425,6 +1426,17 @@ input[type="range"]:focus::-moz-range-thumb {
   margin: 0 auto;
   padding: 100px 0px;
 }
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__containerwrap {
+    padding: 50px 0px;
+  }
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__containerwrap .contact__row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
 .contact__containerwrap .contact__title {
   width: 50%;
   color: #ffffff;
@@ -1436,12 +1448,33 @@ input[type="range"]:focus::-moz-range-thumb {
   padding-bottom: 150px;
   /* 110% */
 }
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__containerwrap .contact__title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 .contact__containerwrap .contact__form {
   width: 50%;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__containerwrap .contact__form {
+    width: 100%;
+  }
 }
 .contact__containerwrap .contact__details {
   width: 50%;
   color: #ffffff;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__containerwrap .contact__details {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .contact__containerwrap .contact__details p {
   text-transform: capitalize;
@@ -1474,13 +1507,14 @@ input[type="range"]:focus::-moz-range-thumb {
   font-size: 16px;
   background: transparent !important;
   border: 0;
-  border-bottom: 1px solid #362126;
+  border-bottom: 1px solid #ffffff;
   box-shadow: none;
   outline: none;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
   text-transform: capitalize;
+  color: #ffffff !important;
 }
 .contact__containerwrap input:focus + .form-label,
 .contact__containerwrap input.has-value + .form-label,
@@ -1493,7 +1527,7 @@ input[type="range"]:focus::-moz-range-thumb {
 .contact__containerwrap textarea.has-value + .form-label {
   top: 30px;
 }
-.contact__containerwrap input:focus::-webkit-input-placeholder {
+.contact__containerwrap input:focus::-webkit-input-placeholder, .contact__containerwrap textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 .contact__containerwrap input {
@@ -1509,7 +1543,9 @@ input[type="range"]:focus::-moz-range-thumb {
   outline: none;
 }
 .contact__containerwrap input:focus ~ label,
-.contact__containerwrap input:valid ~ label {
+.contact__containerwrap input:valid ~ label,
+.contact__containerwrap textarea:focus ~ label,
+.contact__containerwrap textarea:valid ~ label {
   top: 4px;
   font-size: 10px;
   color: #ffffff;
@@ -1543,6 +1579,11 @@ input[type="range"]:focus::-moz-range-thumb {
 .wd-50 {
   width: 50%;
   float: left;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .wd-50 {
+    width: 100%;
+  }
 }
 
 .wd-100 {

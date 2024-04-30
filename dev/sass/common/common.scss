@@ -232,9 +232,10 @@ textarea {
 }
 
 
-.error {
-    font-size: 12px;
-    color: red;
+label.error {
+    font-size: 12px !important;
+    color: red !important;
+    position: initial !important;
 }
 
 .hidden {

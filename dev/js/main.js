@@ -112,12 +112,12 @@ var main = {
       }
     });
 
-    video.addEventListener("timeupdate", function () {
-      if (!isDragging) {
-        var value = (100 / video.duration) * video.currentTime;
-        progressBar.val(value);
-      }
-    });
+    // video.addEventListener("timeupdate", function () {
+    //   if (!isDragging) {
+    //     var value = (100 / video.duration) * video.currentTime;
+    //     progressBar.val(value);
+    //   }
+    // });
   },
   //4.Function to implement contactform validation
   contactValidn: function () {
@@ -156,9 +156,9 @@ var main = {
       },
       messages: {
         contactFormName: {
-          required: main.getRequired(".contact-form #firstname"),
-          minlength: main.getminlength('.contact-form #firstname'),
-          alphabetsnspace: main.getalphabets('.contact-form #firstname'),
+          required: main.getRequired(".contact-form #contactFormName"),
+          minlength: main.getminlength('.contact-form #contactFormName'),
+          alphabetsnspace: main.getalphabets('.contact-form #contactFormName'),
         },
         contactFormCountry: {
           required: main.getRequired(".contact-form #contactFormCountry"),

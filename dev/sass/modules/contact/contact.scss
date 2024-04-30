@@ -7,6 +7,15 @@
     margin: 0 auto;
     padding: 100px 0px;
 
+    @include mobile {
+        padding: 50px 0px;
+    }
+.contact__row{
+    @include mobile{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
     .contact__title {
         width: 50%;
         color: $color-white;
@@ -16,17 +25,33 @@
         line-height: 110px;
         padding-top: 20px;
         padding-bottom: 150px;
+
+        @include mobile {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 50px;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
         /* 110% */
     }
 
     .contact__form {
         width: 50%;
+        @include mobile{
+            width: 100%;
+        }
     }
 
     .contact__details {
         width: 50%;
         color: $color-white;
-
+        @include mobile{
+            width: 100%;
+            margin-top: 20px;
+        }
         p {
             text-transform: capitalize;
             color: $color-white;
@@ -63,13 +88,14 @@
         font-size: 16px;
         background: transparent !important;
         border: 0;
-        border-bottom: 1px solid $color-lightblack;
+        border-bottom: 1px solid $color-white;
         box-shadow: none;
         outline: none;
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
         box-shadow: none !important;
         text-transform: capitalize;
+        color: $color-white !important;
     }
 
     input:focus+.form-label,
@@ -85,67 +111,72 @@
         top: 30px;
     }
 
-    input:focus::-webkit-input-placeholder {
+    input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {
         color: transparent;
     }
-    
-input {
-    background: none;
-    font-size: 16px;
-    display: block;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid $color-white;
-    height: auto;
-}
 
-input:focus {
-    outline: none;
-}
+    input {
+        background: none;
+        font-size: 16px;
+        display: block;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $color-white;
+        height: auto;
+    }
 
-input:focus~label,
-input:valid~label {
-    top: 4px;
-    font-size: 10px;
-    color: $color-white;
-}
+    input:focus {
+        outline: none;
+    }
 
-// input:focus~.bar:before {
-//     width: 320px;
-// }
+    input:focus~label,
+    input:valid~label ,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: 4px;
+        font-size: 10px;
+        color: $color-white;
+    }
 
-label {
-    color: $color-white;
-    font-size: 16px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 15px;
-    top: 10px;
-    transition: 300ms ease all;
-}
+    // input:focus~.bar:before {
+    //     width: 320px;
+    // }
 
-.bar {
-    position: relative;
-    display: block;
-    width: 320px;
-}
+    label {
+        color: $color-white;
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 15px;
+        top: 10px;
+        transition: 300ms ease all;
+    }
 
-.bar:before {
-    content: "";
-    height: 2px;
-    width: 0;
-    bottom: 0px;
-    position: absolute;
-    background: #242935;
-    transition: 300ms ease all;
-    left: 0%;
-}
+    .bar {
+        position: relative;
+        display: block;
+        width: 320px;
+    }
+
+    .bar:before {
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        background: #242935;
+        transition: 300ms ease all;
+        left: 0%;
+    }
 }
 
 .wd-50 {
     width: 50%;
     float: left;
+    @include mobile{
+        width: 100%;
+    }
 }
 
 .wd-100 {
@@ -161,18 +192,21 @@ label {
     position: relative;
     padding: 10px 10px;
 }
-.input__btn{
+
+.input__btn {
     width: 200px;
     position: relative;
     padding-right: 0px;
-    input{
+
+    input {
         width: 100%;
         border-radius: 30px;
         border: 1px solid $color-white;
-        color:$color-white !important;
+        color: $color-white !important;
         text-transform: uppercase;
         padding: 4px 25px;
-        &:hover{
+
+        &:hover {
             border: 1px solid $color-white;
         }
     }

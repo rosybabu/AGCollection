@@ -240,13 +240,16 @@
     font-size: 16px;
     text-transform: uppercase;
     padding-left: 48px;
-    float: left;
+    float: left;     
+    @media (max-width: 576px) {
+        margin-bottom: 20px;
+    }
 }
 
 
-.backtonews_div {
+ .backtonews_div{
     position: relative;
-}
+ }
 
 .backtonewsArrow {
     background: url("./../images/ArrowBlackLeft.png") no-repeat;
@@ -360,6 +363,10 @@
     font-size: 16px;
     text-transform: uppercase;
     padding-right: 80px;
+    @media (max-width: 576px) {
+        padding: 16px 0px;
+        padding-left: 33px;
+    }
 }
 
 .prevnextHideMob {

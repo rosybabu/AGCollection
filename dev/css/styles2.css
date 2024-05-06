@@ -2,41 +2,43 @@
 
 /***************  The Vision Page  CSS  **********************/
 
-.visionh3{
+.visionh3 {
     font-size: 80px;
     font-style: normal;
-    font-weight: 380;
+    font-weight: 300;
     line-height: 90px;
+
 }
 
-.paramain{
+.paramain {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.vision_smallpara{
+.vision_smallpara {
     color: #000;
     font-family: "Saans TRIAL";
     font-size: 20px;
     font-style: normal;
-    font-weight: 380;
+    font-weight: 300;
     line-height: 30px;
     width: 36%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: 0;
     margin-bottom: 100px;
 }
 
-.vision_diamondImages{
+.vision_diamondImages {
     margin-top: 100px;
     margin-bottom: 100px;
+
 }
 
-.diamondshape{    
-    -webkit-mask-box-image: url(./../svg/Diamond_Guidelines.svg) ;
-    mask-image: url(./../svg/Diamond_Guidelines.svg);    
+.diamondshape {
+    -webkit-mask-box-image: url(./../svg/Diamond_Guidelines.svg);
+    mask-image: url(./../svg/Diamond_Guidelines.svg);
     mask-position: center;
-    mask-repeat: no-repeat;   
+    mask-repeat: no-repeat;
 }
 
 .diamondshape:hover {
@@ -44,21 +46,21 @@
     mask-image: none;
 }
 
-.whatwevalue_para{
+.whatwevalue_para {
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.visionimage_2{
+.visionimage_2 {
     margin-top: 50px;
     margin-bottom: 50px;
     display: inline-block;
 }
 
-.visionimage_3{
+.visionimage_3 {
     padding-top: 50px;
     padding-bottom: 50px;
-    display: inline-block;    
+    display: inline-block;
     border-left: solid 30px #000;
     border-right: solid 30px #000;
     background: #000;
@@ -66,9 +68,9 @@
 
 
 
-.vision_ourpartners{
+.vision_ourpartners {
     margin-top: 50px;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
     border-left: solid 30px #000;
@@ -76,32 +78,32 @@
     background: #000;
 }
 
-.vision_ourpartners p{
+.vision_ourpartners p {
     font-size: 30px;
     font-style: normal;
     color: white;
     margin-bottom: 20px;
 }
 
-.ourpart_head{
+.ourpart_head {
     font-size: 60px;
     font-style: normal;
-    font-weight: 380;
+    font-weight: 300;
     line-height: 70px;
     color: white;
     width: 50%;
     margin-bottom: 140px;
 }
 
-.value_div{
+.value_div {
     margin-top: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #000;
     padding-bottom: 30px;
-    display:flex;
+    display: flex;
 }
 
-.value_div p{
+.value_div p {
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -109,9 +111,9 @@
     vertical-align: middle;
 }
 
-.value_smalltext{
+.value_smalltext {
     width: 600px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: 0;
     text-align: justify;
     vertical-align: middle;
@@ -121,46 +123,46 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     max-height: 72px;
- }
+}
 
- .val_number{
+.val_number {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     width: 5.5%;
     padding-top: 1.2%;
- }
+}
 
- .whatwevalue_para h5{
+.whatwevalue_para h5 {
     color: rgba(0, 0, 0, 0.30);
     font-family: Saans;
     font-size: 30px;
     font-family: Saans;
- }
+}
 
- .partners_namehead{
+.partners_namehead {
     font-size: 80px;
     font-style: normal;
-    font-weight: 380;
+    font-weight: 300;
     color: white;
     display: inline-block;
     vertical-align: middle;
     padding-left: 20px;
     opacity: 0.6;
     cursor: pointer;
- }
+}
 
- .partners_namehead:hover{
+.partners_namehead:hover {
     opacity: 1;
- }
+}
 
- .partners_name{
+.partners_name {
     border-bottom: 1px solid #fff;
     opacity: 0.6;
     position: relative;
- }
+}
 
- .partners_link{
+.partners_link {
     color: white;
     border-radius: 100px;
     border: 1px solid #FFF;
@@ -171,62 +173,65 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
- }
+}
 
- .arrowright{
+.arrowright {
     /*background: url(./../images/arrowleft.png); */
     background-size: 80%;
     background-repeat: no-repeat;
     display: inline-block;
- }
+}
 
- .visionpage_box{
+.visionpage_box {
     padding-top: 116px;
- }
+}
 
 /***************  News Article  CSS  **********************/
 
- .Newsarticle_head{
+.Newsarticle_head {
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 30px;
     max-width: 523px;
+
     @media (max-width: 576px) {
         font-size: 22px;
     }
- }
+}
 
- .newsart_rightpara{
+.newsart_rightpara {
     font-size: 18px;
+
     @media (max-width: 576px) {
         font-size: 14px;
     }
- }
+}
 
 
- .newsarticle_cont{
+.newsarticle_cont {
     padding-top: 116px;
- }
+}
 
- .newsart_content{
+.newsart_content {
     padding-top: 100px;
     margin-bottom: 35px;
- }
+}
 
- .newsart_date{
+.newsart_date {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.30);
     margin-bottom: 20px;
+
     @media (max-width: 576px) {
         font-size: 14px;
     }
- }
+}
 
- 
-.backtonewsbtn{
+
+.backtonewsbtn {
     color: #000;
     border-radius: 100px;
     border: 1px solid #000;
@@ -239,12 +244,12 @@
 }
 
 
- .backtonews_div{
-    position: relative; 
- }
+.backtonews_div {
+    position: relative;
+}
 
- .backtonewsArrow{
-    background:url("./../images/ArrowBlackLeft.png") no-repeat;  
+.backtonewsArrow {
+    background: url("./../images/ArrowBlackLeft.png") no-repeat;
     height: 34px;
     width: 34px;
     display: inline-block;
@@ -254,55 +259,58 @@
     position: absolute;
 }
 
- .newsart_imagecont{
+.newsart_imagecont {
     margin-top: 75px;
     margin-bottom: 50px;
- }
+}
 
-.NewsArt_ImgDiv{
+.NewsArt_ImgDiv {
     max-width: 599px;
     max-height: 500px;
+
     @media (max-width: 576px) {
         margin-bottom: 15px;
     }
 }
 
 
-.NewsArt_ImgDiv img{
+.NewsArt_ImgDiv img {
     object-fit: cover;
     width: 599px;
     height: 500px;
     border-radius: 10px;
+
     @media (max-width: 576px) {
         width: 353px;
         height: 294px;
     }
 }
 
-.NewsArt_ImgDiv_2{
+.NewsArt_ImgDiv_2 {
     max-width: 751px;
     max-height: 500px;
 }
 
-.NewsArt_ImgDiv_2 img{
+.NewsArt_ImgDiv_2 img {
     object-fit: cover;
     width: 751px;
     height: 500px;
     border-radius: 10px;
+
     @media (max-width: 576px) {
         width: 353px;
         height: 235px;
     }
 }
 
-.prevnextbtn_box{
+.prevnextbtn_box {
     background: #000;
     height: 35px;
     border-radius: 100px;
     position: relative;
 }
 
-.prevnextbtn_box a.prev_link{
+.prevnextbtn_box a.prev_link {
     color: #000;
     border-radius: 100px;
     border: 1px solid #000;
@@ -312,14 +320,15 @@
     float: left;
     text-transform: uppercase;
     padding-left: 45px;
+
     @media (max-width: 576px) {
         padding: 16px 0px;
         padding-left: 33px;
     }
 }
 
-.leftarrow{
-    background:url("./../images/ArrowBlackLeft.png") no-repeat;  
+.leftarrow {
+    background: url("./../images/ArrowBlackLeft.png") no-repeat;
     height: 34px;
     width: 34px;
     display: inline-block;
@@ -329,8 +338,8 @@
     position: absolute;
 }
 
-.rightarrow{
-    background:url("./../images/ArrowBlack1.png") no-repeat;  
+.rightarrow {
+    background: url("./../images/ArrowBlack1.png") no-repeat;
     height: 34px;
     width: 34px;
     display: inline-block;
@@ -341,9 +350,9 @@
     position: absolute;
 }
 
-.prevnextbtn_box a.next_link{
+.prevnextbtn_box a.next_link {
     color: #000;
-    float:right;
+    float: right;
     border-radius: 100px;
     border: 1px solid #000;
     background: white;
@@ -353,8 +362,123 @@
     padding-right: 80px;
 }
 
-.prevnextHideMob{
+.prevnextHideMob {
     @media (max-width: 576px) {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .visionh3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .paramain {
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .vision_smallpara {
+        width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+
+    .vision_diamondImages {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .value_smalltext {
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    .value_div {
+        display: block;
+    }
+
+    .val_number {
+        float: left;
+    }
+
+    .value_div p {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 45px;
+        float: left;
+        padding-bottom: 30px;
+        padding-left: 47px;
+    }
+
+    .whatwevalue_para {
+        margin-bottom: 0px;
+    }
+
+    .visionimage_2 {
+        margin-top: 0px;
+        margin-bottom: 0px
+    }
+
+    .ourpart_head {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 45px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .vision_ourpartners {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .vision_ourpartners p {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    .partners_namehead {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 50px;
+        opacity: 1;
+        float: left;
+        padding-bottom: 15px;
+    }
+
+    .partners_link {
+        position: initial;
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 170px;
+        margin-bottom: 15px;
+        clear: both;
+        margin-top: 15px;
+    }
+
+    .partners_name {
+        opacity: 1;
+        padding-top: 15px;
+    }
+
+    .partLeftIcon {
+        width: 40px;
+        display: inline-block;
+        float: left;
     }
 }

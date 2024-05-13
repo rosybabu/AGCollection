@@ -1995,6 +1995,110 @@ input[type="range"]:focus::-moz-range-thumb {
     border-radius: 0px;
   }
 }
+.pg__content {
+  padding-top: 116px;
+  padding-bottom: 113px;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .pg__content {
+    padding-top: 0px;
+  }
+}
+
+.pg__title {
+  color: var(--Black, #000);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110px;
+  text-transform: capitalize;
+  padding: 50px 0px 55px 0px;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .pg__title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+.content__flex {
+  display: flex;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__flex {
+    flex-wrap: wrap;
+  }
+}
+
+.content__left {
+  width: 30%;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__left {
+    width: 100%;
+  }
+}
+.content__left h6 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  /* 130% */
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__left h6 {
+    font-size: 22px;
+  }
+}
+
+.content__right {
+  padding-left: 66px;
+  width: 70%;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__right {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+.content__right span {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__right span {
+    font-size: 14px;
+  }
+}
+.content__right ul {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.content__right ul li {
+  list-style-type: disc;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__right ul li {
+    font-size: 14px;
+  }
+}
+.content__right p {
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .content__right p {
+    font-size: 14px;
+  }
+}
+
 /* Slider */
 .slick-loading .slick-list {
   /* background: #fff url('./ajax-loader.gif') center center no-repeat; */

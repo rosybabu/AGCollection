@@ -211,3 +211,55 @@
         }
     }
 }
+//success contact
+.contact__successimg {
+    width: 70%;
+    margin-bottom: 100px;
+    @include mobile{
+        width: 100%;
+    }
+}
+
+.contact__successcontent {
+    width: 30%;
+    padding-left: 70px;
+    @include mobile{
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 50px;
+    }
+}
+
+.contact__successimg img {
+    width: 100%;
+}
+
+.contact__successcontainer {
+    background: #fff;
+    width: 95%;
+    margin: 0 auto;
+    .d-flex{
+        align-items: center;
+        @include mobile{
+            flex-wrap: wrap;
+        }
+    }
+
+h3 {
+    font-size: 60px;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+.error__title {
+    color: grey;
+    padding-bottom: 20px;
+    margin-right: 30px;
+}
+p{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.btn_takemeback{
+    width: 210px;
+}
+}

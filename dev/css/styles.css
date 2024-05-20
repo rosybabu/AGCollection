@@ -1798,6 +1798,63 @@ input[type="range"]:focus::-moz-range-thumb {
   border: 1px solid #ffffff;
 }
 
+.contact__successimg {
+  width: 70%;
+  margin-bottom: 100px;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__successimg {
+    width: 100%;
+  }
+}
+
+.contact__successcontent {
+  width: 30%;
+  padding-left: 70px;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__successcontent {
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+.contact__successimg img {
+  width: 100%;
+}
+
+.contact__successcontainer {
+  background: #fff;
+  width: 95%;
+  margin: 0 auto;
+}
+.contact__successcontainer .d-flex {
+  align-items: center;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .contact__successcontainer .d-flex {
+    flex-wrap: wrap;
+  }
+}
+.contact__successcontainer h3 {
+  font-size: 60px;
+  text-transform: capitalize;
+  padding-bottom: 50px;
+}
+.contact__successcontainer .error__title {
+  color: grey;
+  padding-bottom: 20px;
+  margin-right: 30px;
+}
+.contact__successcontainer p {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.contact__successcontainer .btn_takemeback {
+  width: 210px;
+}
+
 .collection__content {
   width: 93%;
   margin: 0 auto;

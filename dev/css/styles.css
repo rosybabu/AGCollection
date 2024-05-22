@@ -1421,7 +1421,9 @@ input[type="range"]:focus::-moz-range-thumb {
   display: flex;
   gap: 20px;
   max-width: 100%;
-  margin: 20px;
+}
+.blog-post .btnAg {
+  max-width: 190px;
 }
 
 @media (max-width: 991px) {
@@ -1536,7 +1538,7 @@ input[type="range"]:focus::-moz-range-thumb {
     margin-top: 10px;
   }
 }
-.row {
+.rowcls {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1545,10 +1547,11 @@ input[type="range"]:focus::-moz-range-thumb {
   font-size: 16px;
   color: #000;
   font-weight: 400;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 991px) {
-  .row {
+  .rowcls {
     flex-wrap: wrap;
     padding: 20px;
     gap: 30px;
@@ -1562,6 +1565,11 @@ input[type="range"]:focus::-moz-range-thumb {
   margin: auto 0;
   gap: 0;
   width: 32.33%;
+  border: none !important;
+  padding-bottom: 60px;
+}
+.card .btnAg {
+  max-width: 190px;
 }
 
 @media (max-width: 991px) {
@@ -1587,14 +1595,11 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .card-date {
   color: rgba(0, 0, 0, 0.3);
-  font-family: Saans, sans-serif;
   line-height: 162.5%;
 }
 
 .card-excerpt {
-  font-family: Saans, sans-serif;
   line-height: 26px;
-  margin-top: 35px;
 }
 
 .contact__container {

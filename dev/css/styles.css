@@ -1278,6 +1278,11 @@ footer .footer__newsinput ::-ms-input-placeholder {
 .home__videorow {
   position: relative;
 }
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .home__videorow iframe {
+    height: 300px;
+  }
+}
 .home__videorow video {
   object-fit: cover;
   width: 100%;
@@ -1294,6 +1299,11 @@ footer .footer__newsinput ::-ms-input-placeholder {
   margin: 0 auto;
   animation-name: zoom;
   animation-duration: 0.9s;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .video-container iframe {
+    height: 300px;
+  }
 }
 .video-container video {
   vertical-align: middle;

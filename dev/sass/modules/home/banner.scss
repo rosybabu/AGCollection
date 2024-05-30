@@ -167,7 +167,11 @@
 
 .home__videorow {
     position: relative;
-
+iframe{
+  @include mobile {
+    height: 300px;
+  }
+}
     video {
         object-fit: cover;
         width: 100%;
@@ -185,7 +189,11 @@
     margin: 0 auto;
     animation-name: zoom;
     animation-duration: 0.9s;
-
+    iframe{
+      @include mobile {
+        height: 300px;
+      }
+    }
     video {
         vertical-align: middle;
     }

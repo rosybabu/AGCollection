@@ -313,7 +313,7 @@
     position: relative;
 }
 
-.prevnextbtn_box a.prev_link {
+.prevnextbtn_box span.prev_link {
     color: #000;
     border-radius: 100px;
     border: 1px solid #000;
@@ -353,7 +353,7 @@
     position: absolute;
 }
 
-.prevnextbtn_box a.next_link {
+.prevnextbtn_box span.next_link {
     color: #000;
     float: right;
     border-radius: 100px;

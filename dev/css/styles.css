@@ -1000,7 +1000,7 @@ header {
   }
 }
 .footer__container .footer__col a {
-  vertical-align: middleS;
+  vertical-align: middle;
 }
 .footer__container .footer__col a:hover {
   text-decoration: underline;

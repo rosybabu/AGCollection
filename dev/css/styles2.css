@@ -64,9 +64,12 @@
     border-left: solid 30px #000;
     border-right: solid 30px #000;
     background: #000;
+    width: 100%;
 }
 
-
+.visionimage_3 img{
+    width: 100%;
+}
 
 .vision_ourpartners {
     margin-top: 50px;
@@ -109,9 +112,12 @@
     font-weight: 400;
     display: inline-block;
     vertical-align: middle;
+    width: 50%;
 }
-
-.value_smalltext {
+.value_smalltext{
+    width: 50%;
+}
+.value_smalltext p {
     width: 600px;
     margin-left: auto;
     margin-right: 0;
@@ -123,6 +129,13 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     max-height: 72px;
+    color: #000;
+
+/* font-family: "Saans TRIAL"; */
+font-size: 16px;
+font-style: normal;
+font-weight: 380;
+line-height: 26px;
 }
 
 .val_number {
@@ -216,8 +229,14 @@
 .newsart_content {
     padding-top: 100px;
     margin-bottom: 35px;
-}
 
+}
+.newsart_content .col-12.col-sm-7{
+    width: 65%;
+}
+.newsart_imagecont .col-12.col-sm-7{
+    width: 58%;
+}
 .newsart_date {
     font-size: 16px;
     font-style: normal;
@@ -307,10 +326,17 @@
 }
 
 .prevnextbtn_box {
-    background: #000;
+    /* background: #000; */
     height: 35px;
     border-radius: 100px;
+   
     position: relative;
+    background: linear-gradient(to left, transparent 50%, #000 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    &:hover{
+        background-position: left;
+    }
 }
 
 .prevnextbtn_box span.prev_link {

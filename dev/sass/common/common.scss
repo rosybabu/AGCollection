@@ -496,13 +496,15 @@ label {
 }
 
 .container {
-    width: 86%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
 
     @include mobile {
         width: 100%;
         padding: 0 16px;
-        box-sizing: border-box;
+       
     }
 }
 

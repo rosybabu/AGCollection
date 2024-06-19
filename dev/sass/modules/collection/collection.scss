@@ -12,19 +12,22 @@
 }
 
 .collection__title {
-    color: $color-white;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 90px;
-    /* 112.5% */
-    padding-bottom: 100px;
-    width: 80%;
-    @include mobile{
-        font-size: 35px;
-        width: 100%;
-        padding-bottom: 15px;
+    h3{
+        color: $color-white;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 90px;
+        /* 112.5% */
+        padding-bottom: 100px;
+        width: 80%;
+        @include mobile{
+            font-size: 35px;
+            width: 100%;
+            padding-bottom: 15px;
+        }
     }
+    
 }
 
 .collection__cont {
@@ -60,7 +63,7 @@
     }
     img{
         width: 100%;
-       
+       border-radius: 10px;
     }
 }
 .collection__slidersingle{
@@ -132,6 +135,9 @@
     overflow: hidden;
     text-align: right;
     padding: 140px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     @include mobile{
         position: initial;
         width: 100%;
@@ -175,9 +181,11 @@
     }
     .btnAg{
         margin-top: 20px;
-        min-width: 230px;
+        min-width: 180px;
         border: 1px solid $color-white !important;
         color: $color-white !important;
+        padding: 10px 15px;
+        text-align: left;
     }
 }
 @media (hover: none) {
@@ -186,5 +194,13 @@
         height: 100%;
         border-radius: 0px;
         
+    }
+  }
+  @media screen and (min-width:1024px) and (max-width:1280px){
+    .collection__singlecont{
+        width: 350px;
+        svg{
+            width: 100%;
+        }
     }
   }

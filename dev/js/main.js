@@ -17,12 +17,15 @@ var main = {
 
     pagebanner.slick({
       infinite: true,
-      speed: 500,
+      // speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
+      // slidesToScroll: 1,
       arrows: false,
       autoplay: true,
-      speed: 5000,
+      // speed: 5000,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
       responsive: [
         {
           breakpoint: 1024,

@@ -1047,13 +1047,15 @@ footer {
   background-color: #000000;
   padding: 40px 0px 68px 0px;
 }
+footer .footer__newstitle {
+  width: 50%;
+}
 footer .footer__newstitle h6 {
   color: #ffffff;
   font-size: 40px;
   font-style: normal;
   font-weight: 300;
   line-height: 50px;
-  width: 50%;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   footer .footer__newstitle h6 {
@@ -1068,7 +1070,10 @@ footer .footer__newstitle h6 {
 footer .footer__newsinput {
   position: relative;
   cursor: pointer;
-  width: 232px;
+}
+footer .footer__newsinput .button__hover {
+  top: 0%;
+  transform: none;
 }
 footer .footer__newsinput input[type="text"] {
   border-radius: 100px;

@@ -3,13 +3,22 @@ var main = {
 
   //1.Function to implement humburger---HEADER
   humburger: function () {
-    $('.burger').click(function () {
+    $('.burger').click(function (e) {
+      e.stopPropagation();
       $(this).toggleClass("active");
       $(this).parents(".hdr__menu-btn").find(".menu").toggleClass("header__menu");
       $(this).parents(".hdr__content").toggleClass("hdr__contentCls");
       $(this).parents(".main__hdr-wrap").toggleClass("bg-blackhd");
       $('body').toggleClass("overflowhidden");
     })
+    $('html').click(function() {
+      $(".burger").removeClass("active");
+      $(".menu").removeClass("header__menu");
+      $(".hdr__content").removeClass("hdr__contentCls");
+      $(".main__hdr-wrap").removeClass("bg-blackhd");
+    });
+    
+   ;
   },
   //2.Function to implement slider
   slider: function () {

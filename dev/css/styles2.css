@@ -218,6 +218,7 @@ line-height: 26px;
     margin-bottom: 100px;
     @media (max-width: 576px) {
         font-size: 14px;
+        margin-bottom: 0px;
     }
 }
 
@@ -233,9 +234,15 @@ line-height: 26px;
 }
 .newsart_content .col-12.col-sm-7{
     width: 65%;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 }
 .newsart_imagecont .col-12.col-sm-7{
     width: 58%;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 }
 .newsart_date {
     font-size: 16px;
@@ -284,6 +291,9 @@ line-height: 26px;
 .newsart_imagecont {
     margin-top: 75px;
     margin-bottom: 50px;
+    @media (max-width: 576px) {
+        margin-top: 15px;
+    }
 }
 
 .NewsArt_ImgDiv {
@@ -432,10 +442,12 @@ line-height: 26px;
         font-style: normal;
         font-weight: 300;
         line-height: 26px;
+        clear: both;
     }
 
     .value_div {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .val_number {
@@ -450,6 +462,7 @@ line-height: 26px;
         float: left;
         padding-bottom: 30px;
         padding-left: 47px;
+width: 94%;
     }
 
     .whatwevalue_para {

@@ -23,6 +23,9 @@
         width: 80%;
         @include mobile{
             font-size: 35px;
+            font-style: normal;
+            font-weight: 380;
+            line-height: 45px;
             width: 100%;
             padding-bottom: 15px;
         }
@@ -82,6 +85,10 @@
         transition: .5s ease-in-out;
         width: 100%;
         border-radius: 10px;
+        @include mobile{
+            height: 170px;
+            object-fit: cover;
+        }
     }
 
     &:hover {
@@ -145,6 +152,7 @@
         text-align: left;
         border-radius: 0px;
         padding: 20px 0px;
+        justify-content:flex-start
     }
     .hover__subtitle {
         color: rgba(255, 255, 255, 0.50);
@@ -186,6 +194,22 @@
         color: $color-white !important;
         padding: 10px 15px;
         text-align: left;
+        @include mobile{
+            min-width: 120px;
+            padding: 3px 15px;
+        }
+        .button__hover{
+            @include mobile{
+              width: 24px;
+              height: 24px;
+            }
+          }
+          svg{
+            @include mobile{
+              width: 24px;
+              height: 24px;
+            }
+          }
     }
 }
 @media (hover: none) {

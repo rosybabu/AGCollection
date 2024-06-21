@@ -24,6 +24,9 @@ header {
     width: 50%;
     padding: 40px 2.7% 40px 0px;
     box-sizing: border-box;
+    background: linear-gradient(to right, transparent 50%, #000 50%) left;
+    background-size: 200%;
+    transition: 1s;
 }
 
 .hdr__contentwrap {
@@ -185,8 +188,9 @@ header {
     overflow: hidden;
 }
 .hdr__contentCls {
-    background: $color-black;
-    padding: 40px 2.7% 40px 0px;
+    // background: $color-black;
+    background-position: right;
+    // padding: 40px 2.7% 40px 0px;
     .burger:before, .burger:after{
         background: $color-white;
     }
@@ -213,12 +217,12 @@ header {
     height: calc(100vh - 115px);
     width: 50%;
     right: 0%;
-    top:116px;
+    top:113px;
     z-index: 9;
     @include mobile{
         width: 100%;
         border-radius: 0px;
-        top: 105px;
+        top: 100px;
     }
 }
 

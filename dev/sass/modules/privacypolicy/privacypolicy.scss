@@ -1,7 +1,8 @@
 .pg__content {
     padding-top: 116px;
     padding-bottom: 113px;
-
+width: 95%;
+margin: 0 auto;
     @include mobile {
         padding-top: 0px;
     }

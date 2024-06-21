@@ -74,45 +74,43 @@
         padding: 0px;
     }
 
-    option {
-        color: $color-black;
-    }
+   
 
     .input-parent {
         position: relative;
     }
 
-    input,
-    textarea {
-        display: inline-block;
-        font-size: 16px;
-        background: transparent !important;
-        border: 0;
-        border-bottom: 1px solid $color-white;
-        box-shadow: none;
-        outline: none;
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
-        box-shadow: none !important;
-        text-transform: capitalize;
-        color: $color-white !important;
-    }
+    // input,
+    // textarea {
+    //     display: inline-block;
+    //     font-size: 16px;
+    //     background: transparent !important;
+    //     border: 0;
+    //     border-bottom: 1px solid $color-white;
+    //     box-shadow: none;
+    //     outline: none;
+    //     -webkit-box-shadow: none !important;
+    //     -moz-box-shadow: none !important;
+    //     box-shadow: none !important;
+    //     text-transform: capitalize;
+    //     color: $color-white !important;
+    // }
 
     input:focus+.form-label,
     input.has-value+.form-label,
-    textarea:focus+.form-label,
-    textarea.has-value+.form-label {
+    textarea:focus+.form-label{
         top: 5px;
         font-size: 14px;
     }
 
     .msgBox textarea:focus~.form-label,
     .msgBox textarea.has-value~.form-label,.msgBox textarea:valid~label {
-        top: 0px;
+        // top: 4px;
+        // font-size: 10px;
     }
- .msgBox .form-label{
-        top: 35px;
-    }
+//  .msgBox .form-label{
+//         top: 35px;
+//     }
     input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {
         color: transparent;
     }
@@ -126,7 +124,14 @@
         border-bottom: 1px solid $color-white;
         height: auto;
     }
-
+textarea{
+    background: none;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-white;
+}
     input:focus {
         outline: none;
     }
@@ -286,3 +291,17 @@ p{
     width: 210px;
 }
 }
+select option:hover {
+    box-shadow: 0 0 10px 100px #fff inset !important;
+    color:white;
+  }
+  select option:checked{
+    box-shadow: 0 0 10px 100px #fff inset !important;
+    }
+    option{
+        background-color: #000;
+        color: #fff !important;
+    }
+    .contactFormMessage {
+        min-height: 104px;
+    }

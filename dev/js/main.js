@@ -198,6 +198,19 @@ var main = {
       }
     });
   },
+  //5.hover effect
+  hoverImg:function(){
+    $(".partners_name1").hover(function(){
+      $(".hover__imgshow1").show();
+  }, function(){
+    $(".hover__imgshow1").hide();
+  });
+  $(".partners_name2").hover(function(){
+    $(".hover__imgshow2").show();
+}, function(){
+  $(".hover__imgshow2").hide();
+});
+  },
   getminlength: function (selector) {
     return $(selector).attr('data-minLength');
   },
@@ -216,6 +229,7 @@ $(document).ready(function () {
   main.slider();
   main.video();
   main.contactValidn();
+  main.hoverImg();
   // phone number regex 
   $.validator.addMethod(
     "uaePhone",

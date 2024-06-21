@@ -55,8 +55,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
     display: inline-block;
+    width: 100%;
 }
-
+.visionimage_2 img{
+    width: 100%;
+}
 .visionimage_3 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -97,7 +100,9 @@
     width: 50%;
     margin-bottom: 140px;
 }
-
+.img-mob{
+    display: none;
+}
 .value_div {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -105,7 +110,10 @@
     padding-bottom: 30px;
     display: flex;
 }
+.value_div:hover .value_smalltext{
+    opacity: 1;
 
+}
 .value_div p {
     font-size: 60px;
     font-style: normal;
@@ -116,6 +124,8 @@
 }
 .value_smalltext{
     width: 50%;
+    opacity: 0;
+    transition: .1s ease;
 }
 .value_smalltext p {
     width: 600px;
@@ -171,7 +181,7 @@ line-height: 26px;
 
 .partners_name {
     border-bottom: 1px solid #fff;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     position: relative;
 }
 
@@ -186,6 +196,9 @@ line-height: 26px;
     position: absolute;
     right: 20px;
     bottom: 20px;
+    width: 180px;
+    padding: 7px 13px;
+    text-align: left;
 }
 
 .arrowright {
@@ -443,13 +456,18 @@ line-height: 26px;
         font-weight: 300;
         line-height: 26px;
         clear: both;
+        opacity: 1;
     }
 
     .value_div {
         display: flex;
         flex-wrap: wrap;
     }
-
+.img-mob{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
     .val_number {
         float: left;
     }
@@ -506,7 +524,7 @@ width: 94%;
     }
 
     .partners_link {
-        position: initial;
+        position: relative;
         float: none;
         text-align: center;
         display: block;
@@ -515,16 +533,35 @@ width: 94%;
         margin-bottom: 15px;
         clear: both;
         margin-top: 15px;
+       
     }
 
     .partners_name {
         opacity: 1;
         padding-top: 15px;
+       
     }
+  
 
     .partLeftIcon {
         width: 40px;
         display: inline-block;
         float: left;
     }
+}
+.partners_name:hover .partLeftIcon path{
+    fill: white;
+}
+.partners_name:hover .partners_namehead{
+color: white;
+}
+.partners_name:hover{
+    opacity: 1;
+}
+.hover__imgshow{
+    display: none;
+}
+.vision_ourpartnersflex {
+    display: flex;
+    justify-content: space-between;
 }

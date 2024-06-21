@@ -744,6 +744,9 @@ header {
   width: 50%;
   padding: 40px 2.7% 40px 0px;
   box-sizing: border-box;
+  background: linear-gradient(to right, transparent 50%, #000 50%) left;
+  background-size: 200%;
+  transition: 1s;
 }
 
 .hdr__contentwrap {
@@ -903,8 +906,7 @@ header {
 }
 
 .hdr__contentCls {
-  background: #000000;
-  padding: 40px 2.7% 40px 0px;
+  background-position: right;
 }
 .hdr__contentCls .burger:before, .hdr__contentCls .burger:after {
   background: #ffffff;
@@ -932,14 +934,14 @@ header {
   height: calc(100vh - 115px);
   width: 50%;
   right: 0%;
-  top: 116px;
+  top: 113px;
   z-index: 9;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .header__menu {
     width: 100%;
     border-radius: 0px;
-    top: 105px;
+    top: 100px;
   }
 }
 
@@ -1050,6 +1052,11 @@ footer {
 footer .footer__newstitle {
   width: 50%;
 }
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  footer .footer__newstitle {
+    width: 100%;
+  }
+}
 footer .footer__newstitle h6 {
   color: #ffffff;
   font-size: 40px;
@@ -1071,9 +1078,19 @@ footer .footer__newsinput {
   position: relative;
   cursor: pointer;
 }
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  footer .footer__newsinput {
+    width: 232px;
+  }
+}
 footer .footer__newsinput .button__hover {
   top: 0%;
   transform: none;
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  footer .footer__newsinput .button__hover {
+    top: 3px;
+  }
 }
 footer .footer__newsinput input[type="text"] {
   border-radius: 100px;
@@ -1553,7 +1570,6 @@ input[type="range"]:focus::-moz-range-thumb {
   color: #000;
   font-weight: 380;
   margin: auto 0;
-  padding: 0 20px;
 }
 
 @media (max-width: 991px) {
@@ -1729,6 +1745,7 @@ input[type="range"]:focus::-moz-range-thumb {
   aspect-ratio: 1.49;
   object-fit: cover;
   object-position: center;
+  border-radius: 10px;
 }
 
 .card-details {
@@ -1748,6 +1765,9 @@ input[type="range"]:focus::-moz-range-thumb {
   line-height: 26px;
 }
 
+.vision_top img {
+  width: 100%;
+}
 @media screen and (max-width: 1024px) {
   .vision_top img {
     border-radius: 10px;
@@ -1832,40 +1852,14 @@ input[type="range"]:focus::-moz-range-thumb {
   color: #ffffff;
   padding: 0px;
 }
-.contact__containerwrap option {
-  color: #000000;
-}
 .contact__containerwrap .input-parent {
   position: relative;
 }
-.contact__containerwrap input,
-.contact__containerwrap textarea {
-  display: inline-block;
-  font-size: 16px;
-  background: transparent !important;
-  border: 0;
-  border-bottom: 1px solid #ffffff;
-  box-shadow: none;
-  outline: none;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  text-transform: capitalize;
-  color: #ffffff !important;
-}
 .contact__containerwrap input:focus + .form-label,
 .contact__containerwrap input.has-value + .form-label,
-.contact__containerwrap textarea:focus + .form-label,
-.contact__containerwrap textarea.has-value + .form-label {
+.contact__containerwrap textarea:focus + .form-label {
   top: 5px;
   font-size: 14px;
-}
-.contact__containerwrap .msgBox textarea:focus ~ .form-label,
-.contact__containerwrap .msgBox textarea.has-value ~ .form-label, .contact__containerwrap .msgBox textarea:valid ~ label {
-  top: 0px;
-}
-.contact__containerwrap .msgBox .form-label {
-  top: 35px;
 }
 .contact__containerwrap input:focus::-webkit-input-placeholder, .contact__containerwrap textarea:focus::-webkit-input-placeholder {
   color: transparent;
@@ -1878,6 +1872,14 @@ input[type="range"]:focus::-moz-range-thumb {
   border-radius: 0;
   border-bottom: 1px solid #ffffff;
   height: auto;
+}
+.contact__containerwrap textarea {
+  background: none;
+  font-size: 16px;
+  display: block;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ffffff;
 }
 .contact__containerwrap input:focus {
   outline: none;
@@ -2038,6 +2040,24 @@ input:-webkit-autofill {
 }
 .contact__successcontainer .btn_takemeback {
   width: 210px;
+}
+
+select option:hover {
+  box-shadow: 0 0 10px 100px #fff inset !important;
+  color: white;
+}
+
+select option:checked {
+  box-shadow: 0 0 10px 100px #fff inset !important;
+}
+
+option {
+  background-color: #000;
+  color: #fff !important;
+}
+
+.contactFormMessage {
+  min-height: 104px;
 }
 
 .collection__content {
@@ -2282,6 +2302,8 @@ input:-webkit-autofill {
 .pg__content {
   padding-top: 116px;
   padding-bottom: 113px;
+  width: 95%;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .pg__content {

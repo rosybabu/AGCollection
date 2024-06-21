@@ -561,7 +561,8 @@ label {
 }
 .bg-blackhd{
     @include mobile{
-        background-color: $color-black;
+        // background-color: $color-black;
+        background-position: right !important;
     }
     
 }

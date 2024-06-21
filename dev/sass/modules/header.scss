@@ -11,10 +11,19 @@ header {
     background-color: #fff;
     z-index: 9;
     width: 100%;
+    @include mobile{
+        // background-color: $color-black;
+        // height: 100%;
+    }
 }
 .main__hdr-wrap {
     justify-content: space-between;
     align-items: center;
+    @include mobile{
+        background: linear-gradient(to right, transparent 50%, #000 50%) left;
+        background-size: 200%;
+        transition: 1s;
+    }
    
 }
 .main__logo{
@@ -212,7 +221,17 @@ header {
     transition: 1s;
     overflow: hidden;
 }
+img.menulogo {
+    display: none;
+}
 
+.bg-blackhd .menulogo {
+    display: block !important;
+}
+
+.bg-blackhd .hdrlogo {
+    display: none;
+}
 .header__menu{
     height: calc(100vh - 115px);
     width: 50%;
@@ -269,4 +288,10 @@ header {
         font-weight: 380;
         line-height: 26px
     }
+}
+.switch{
+    display: none;
+}
+.hdr__btnwrap{
+    margin-right: 20px;
 }

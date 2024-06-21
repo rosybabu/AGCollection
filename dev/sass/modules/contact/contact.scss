@@ -114,7 +114,13 @@
     input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {
         color: transparent;
     }
-
+    textarea:focus ~ label {
+        // color: red;
+        font-size: 10px !important;
+        top: 0px;
+    }
+    textarea ~ label{
+    top: 5px;}
     input {
         background: none;
         font-size: 16px;
@@ -131,6 +137,7 @@ textarea{
     border: none;
     border-radius: 0;
     border-bottom: 1px solid $color-white;
+    color: #fff;
 }
     input:focus {
         outline: none;
@@ -195,7 +202,7 @@ textarea{
 
 .group {
     position: relative;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 .submit__btn {
     max-width: 120px;

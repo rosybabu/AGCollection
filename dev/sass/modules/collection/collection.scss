@@ -228,3 +228,20 @@
         }
     }
   }
+  .collection__slidersingle:nth-child(1) img{
+  
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .collection__slidersingle:nth-child(2){
+    width: 100%;
+    margin-right: 0px;
+  }
+  .collection__slidersingle:nth-child(2) img{
+
+    width: 100%;
+    margin-right: 0px;
+  }
+            // object-fit: cover;
+        

@@ -436,7 +436,7 @@ label {
 
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .bg-blackhd {
-    background-color: #000000;
+    background-position: right !important;
   }
 }
 
@@ -735,6 +735,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .main__hdr-wrap {
+    background: linear-gradient(to right, transparent 50%, #000 50%) left;
+    background-size: 200%;
+    transition: 1s;
+  }
+}
 
 .main__logo {
   padding-left: 2.7%;
@@ -930,6 +937,18 @@ header {
   overflow: hidden;
 }
 
+img.menulogo {
+  display: none;
+}
+
+.bg-blackhd .menulogo {
+  display: block !important;
+}
+
+.bg-blackhd .hdrlogo {
+  display: none;
+}
+
 .header__menu {
   height: calc(100vh - 115px);
   width: 50%;
@@ -979,6 +998,14 @@ header {
   font-style: normal;
   font-weight: 380;
   line-height: 26px;
+}
+
+.switch {
+  display: none;
+}
+
+.hdr__btnwrap {
+  margin-right: 20px;
 }
 
 .footer__container {
@@ -1163,6 +1190,20 @@ footer .footer__newsinput ::-ms-input-placeholder {
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .bottom__footer .bottom__footerwrap {
     flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  .bottom__footer .footer__col:nth-child(1) {
+    order: 1;
+  }
+  .bottom__footer .footer__col:nth-child(2) {
+    order: 3;
+  }
+  .bottom__footer .footer__col:nth-child(3) {
+    order: 2;
+  }
+  .bottom__footer .footer__col:nth-child(4) {
+    order: 4;
   }
 }
 
@@ -1864,6 +1905,13 @@ input[type="range"]:focus::-moz-range-thumb {
 .contact__containerwrap input:focus::-webkit-input-placeholder, .contact__containerwrap textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
+.contact__containerwrap textarea:focus ~ label {
+  font-size: 10px !important;
+  top: 0px;
+}
+.contact__containerwrap textarea ~ label {
+  top: 5px;
+}
 .contact__containerwrap input {
   background: none;
   font-size: 16px;
@@ -1880,6 +1928,7 @@ input[type="range"]:focus::-moz-range-thumb {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #ffffff;
+  color: #fff;
 }
 .contact__containerwrap input:focus {
   outline: none;
@@ -1937,7 +1986,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .group {
   position: relative;
-  padding: 10px 10px;
+  padding: 5px 10px;
 }
 
 .submit__btn {
@@ -2299,6 +2348,21 @@ option {
     width: 100%;
   }
 }
+.collection__slidersingle:nth-child(1) img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection__slidersingle:nth-child(2) {
+  width: 100%;
+  margin-right: 0px;
+}
+
+.collection__slidersingle:nth-child(2) img {
+  width: 100%;
+  margin-right: 0px;
+}
+
 .pg__content {
   padding-top: 116px;
   padding-bottom: 113px;

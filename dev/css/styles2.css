@@ -565,3 +565,20 @@ color: white;
     display: flex;
     justify-content: space-between;
 }
+.visionimage_3:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.visionimage_3  img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .1s ease-in-out;
+    transition: .5s ease-in-out;
+    /* overflow: hidden; */
+    border-radius:10px;
+}
+.visionimage_3{
+    overflow:hidden;
+}

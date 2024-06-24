@@ -1428,7 +1428,9 @@ footer .footer__newsinput ::-ms-input-placeholder {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .video-container iframe {
-    height: 300px;
+    height: 800px;
+    transform: rotate(90deg);
+    width: 100%;
   }
 }
 .video-container video {
@@ -2372,6 +2374,12 @@ option {
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .pg__content {
     padding-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 275px) and (max-width: 767px) {
+  section.blog-post.pg__content {
+    padding-top: 104px;
   }
 }
 

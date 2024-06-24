@@ -228,7 +228,7 @@ $(document).ready(function () {
   main.humburger();
   main.slider();
   main.video();
-  main.contactValidn();
+  // main.contactValidn();
   main.hoverImg();
   // phone number regex 
   $.validator.addMethod(

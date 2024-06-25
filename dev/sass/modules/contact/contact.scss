@@ -129,6 +129,7 @@
         border-radius: 0;
         border-bottom: 1px solid $color-white;
         height: auto;
+        color: #fff;
     }
 textarea{
     background: none;
@@ -145,7 +146,7 @@ textarea{
 
     input:focus~label,
     input:valid~label{
-        top: 4px;
+        top: -3px;
         font-size: 10px;
         color: $color-white;
     }

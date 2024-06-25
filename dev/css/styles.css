@@ -1428,7 +1428,9 @@ footer .footer__newsinput ::-ms-input-placeholder {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .video-container iframe {
-    height: 300px;
+    height: 800px;
+    transform: rotate(270deg);
+    width: 100%;
   }
 }
 .video-container video {
@@ -1920,6 +1922,7 @@ input[type="range"]:focus::-moz-range-thumb {
   border-radius: 0;
   border-bottom: 1px solid #ffffff;
   height: auto;
+  color: #fff;
 }
 .contact__containerwrap textarea {
   background: none;
@@ -1935,7 +1938,7 @@ input[type="range"]:focus::-moz-range-thumb {
 }
 .contact__containerwrap input:focus ~ label,
 .contact__containerwrap input:valid ~ label {
-  top: 4px;
+  top: -3px;
   font-size: 10px;
   color: #ffffff;
 }

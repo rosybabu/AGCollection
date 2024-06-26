@@ -202,6 +202,9 @@ iframe{
 
 .home__videocontainer {
     margin: 0 auto;
+    @include mobile{
+      // padding-top: 102px;
+    }
 }
 
 .video-container {
@@ -210,12 +213,16 @@ iframe{
     margin: 0 auto;
     animation-name: zoom;
     animation-duration: 0.9s;
+    @include mobile {
+      overflow: auto;
+    }
     iframe{
       @include mobile {
-        height: 800px;
+        height: 100vh;
         transform: rotate(270deg);
-        width: 100%;
-        //  height: 300px;
+        width: 100vh;
+        object-fit: cover;
+        max-height: 100%;
       }
     }
     video {

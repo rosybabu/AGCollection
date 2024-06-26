@@ -111,6 +111,7 @@ label.error {
   font-size: 12px !important;
   color: red !important;
   position: initial !important;
+  margin-bottom: 0px;
 }
 
 .hidden {
@@ -1912,7 +1913,7 @@ input[type="range"]:focus::-moz-range-thumb {
   top: 0px;
 }
 .contact__containerwrap textarea ~ label {
-  top: 5px;
+  top: -10px;
 }
 .contact__containerwrap input {
   background: none;
@@ -1923,6 +1924,7 @@ input[type="range"]:focus::-moz-range-thumb {
   border-bottom: 1px solid #ffffff;
   height: auto;
   color: #fff;
+  padding-top: 0px;
 }
 .contact__containerwrap textarea {
   background: none;
@@ -1932,13 +1934,14 @@ input[type="range"]:focus::-moz-range-thumb {
   border-radius: 0;
   border-bottom: 1px solid #ffffff;
   color: #fff;
+  padding-top: 10px;
 }
 .contact__containerwrap input:focus {
   outline: none;
 }
 .contact__containerwrap input:focus ~ label,
 .contact__containerwrap input:valid ~ label {
-  top: -3px;
+  top: -12px;
   font-size: 10px;
   color: #ffffff;
 }
@@ -1949,8 +1952,9 @@ input[type="range"]:focus::-moz-range-thumb {
   position: absolute;
   pointer-events: none;
   left: 15px;
-  top: 10px;
+  top: 5px;
   transition: 300ms ease all;
+  margin-bottom: 0px;
 }
 .contact__containerwrap .bar {
   position: relative;
@@ -1989,7 +1993,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .group {
   position: relative;
-  padding: 5px 10px;
+  padding: 0px 10px 18px 10px;
 }
 
 .submit__btn {
@@ -2024,6 +2028,8 @@ input:-webkit-autofill {
   width: 130px;
   position: relative;
   padding-right: 0px;
+  padding-left: 10px;
+  padding-bottom: 0px;
 }
 .input__btn input {
   width: 100%;

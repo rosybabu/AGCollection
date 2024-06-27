@@ -105,14 +105,20 @@
         }
 
         img {
-            -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-            opacity: 0.5;
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+             /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
         }
 
     }
 }
-
+.collection__single-project:first-child {
+    padding: 0px;
+    margin-bottom: 10px;
+}
 .collection__singlecont {
     position: absolute;
     top: 50%;

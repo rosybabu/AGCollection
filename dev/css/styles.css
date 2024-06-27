@@ -1134,6 +1134,9 @@ li:nth-child(1):hover svg path:nth-child(2) {
 footer {
   background-color: #000000;
   padding: 40px 0px 68px 0px;
+  @media only screen and (min-width: 275px) and (max-width: 767px) {
+    padding-bottom: 50px;
+  }
 }
 footer .footer__newstitle {
   width: 50%;
@@ -1187,6 +1190,7 @@ footer .footer__newsinput input[type="text"] {
   height: 35px;
   background-color: #000000;
   color: #ffffff;
+  text-transform: lowercase;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   footer .footer__newsinput input[type="text"] {
@@ -1930,7 +1934,7 @@ input[type="range"]:focus::-moz-range-thumb {
   line-height: 110px;
   padding-top: 20px;
   padding-bottom: 150px;
-  /* 110% */
+  margin-top: 20px;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .contact__containerwrap .contact__title {
@@ -2214,6 +2218,8 @@ option {
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .main__collection {
     padding-top: 50px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
 

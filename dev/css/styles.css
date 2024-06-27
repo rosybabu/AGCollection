@@ -1134,6 +1134,9 @@ li:nth-child(1):hover svg path:nth-child(2) {
 footer {
   background-color: #000000;
   padding: 40px 0px 68px 0px;
+  @media only screen and (min-width: 275px) and (max-width: 767px) {
+    padding-bottom: 50px;
+  }
 }
 footer .footer__newstitle {
   width: 50%;
@@ -2213,6 +2216,8 @@ option {
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .main__collection {
     padding-top: 50px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
 
@@ -2281,6 +2286,7 @@ option {
 .collection__slidersingle {
   margin-right: 10px;
   padding: 80px 0px;
+  padding-top: 54px;
 }
 
 .collection__single-project {

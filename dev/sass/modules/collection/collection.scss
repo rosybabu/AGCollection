@@ -14,13 +14,13 @@
 .collection__title {
     h3{
         color: $color-white;
-        font-size: 80px;
+        font-size: 70px;
         font-style: normal;
         font-weight: 300;
         line-height: 90px;
         /* 112.5% */
         padding-bottom: 100px;
-        width: 80%;
+        width: 100%;
         @include mobile{
             font-size: 35px;
             font-style: normal;

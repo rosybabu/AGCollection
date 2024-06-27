@@ -24,7 +24,7 @@
     text-align: left;
     margin-bottom: 20px;
     @include mobile {
-      min-width: 122px;
+      min-width: 150px;
       padding: 3px 10px;
       height: 26px;
       margin-bottom: 15px;
@@ -168,16 +168,16 @@
     h2 {
         color: $color-white;
         text-align: center;
-        font-size: 100px;
+        font-size: 80px;
         font-style: normal;
         font-weight: 400;
         line-height: 110px;
 
         @include mobile {
-            font-size: 40px;
+            font-size: 35px;
             font-style: normal;
             font-weight: 400;
-            line-height: 50px;
+            line-height: 42px;
         }
     }
 }
@@ -190,7 +190,7 @@
     position: relative;
 iframe{
   @include mobile {
-    height: 300px;
+    height: 335px;
   }
 }
     video {
@@ -203,7 +203,7 @@ iframe{
 .home__videocontainer {
     margin: 0 auto;
     @include mobile{
-      // padding-top: 102px;
+      padding-top: 87px;
     }
 }
 
@@ -336,7 +336,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .home__videocontent {
     position: absolute;
-    top: 60%;
+    top: 50% !important;
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -483,6 +483,7 @@ line-height: 40px; /* 133.333% */
   .blog-post-cta-text {
     // font-family: Saans TRIAL, sans-serif;
     margin: auto 0;
+    font-size: 15px;
   }
 
   .blog-post-cta-icon {
@@ -569,11 +570,20 @@ line-height: 40px; /* 133.333% */
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 15px;
+    flex-direction: column-reverse;
+    border-bottom: 1px solid #000 !important;
+    border-radius: 0;
+    padding-bottom: 50px;
+  }
+  .card:last-child{
+    border-bottom: 0px !important;
   }
   .card .btnAg{
-    max-width: 122px;
+    max-width: 130px;
     height: 26px;
     padding: 3px 14px;
+    margin-bottom: 15px;
+    margin-top: 0px;
   }
   .blog-post .button__hover,.card .button__hover{
       width: 24px;
@@ -588,8 +598,9 @@ line-height: 40px; /* 133.333% */
     border-radius: 10px;
   }
   .card-details{
-    padding-top: 0px;
-    margin-top: 15px;
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+    gap: 15px !important;
   }
 }
 

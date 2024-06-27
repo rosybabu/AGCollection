@@ -10,6 +10,7 @@ margin: 0 auto;
 section.blog-post.pg__content{
     @include mobile {
         padding-top: 104px;
+        padding-bottom: 0px;
     }
 
 }

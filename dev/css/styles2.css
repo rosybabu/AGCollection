@@ -158,9 +158,9 @@ line-height: 26px;
 
 .whatwevalue_para h5 {
     color: rgba(0, 0, 0, 0.30);
-    font-family: Saans;
+    /* font-family: Saans; */
     font-size: 30px;
-    font-family: Saans;
+    /* font-family: Saans; */
 }
 
 .partners_namehead {
@@ -582,4 +582,5 @@ color: white;
 .visionimage_3{
     overflow:hidden;
     vertical-align: middle;
+    padding: 0;
 }

@@ -1893,6 +1893,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .vision_top img {
   width: 100%;
+  border-radius: 10px;
 }
 @media screen and (max-width: 1024px) {
   .vision_top img {
@@ -2335,8 +2336,8 @@ option {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .collection__singlecont svg {
-    width: 213px;
-    height: 58px;
+    width: 155px;
+    height: 90px;
   }
 }
 
@@ -2395,6 +2396,7 @@ option {
   .hover__menuContainer .hover__menuwrap {
     max-width: 100%;
     float: none;
+    width: 100%;
   }
 }
 .hover__menuContainer .btnAg {

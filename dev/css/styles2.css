@@ -59,6 +59,7 @@
 }
 .visionimage_2 img{
     width: 100%;
+    border-radius: 10px;
 }
 .visionimage_3 {
     padding-top: 50px;

@@ -228,7 +228,7 @@ $(document).ready(function () {
   main.humburger();
   main.slider();
   main.video();
-  // main.contactValidn();
+  main.contactValidn();
   main.hoverImg();
   // phone number regex 
   $.validator.addMethod(
@@ -243,6 +243,16 @@ $(document).ready(function () {
   $.validator.addMethod("alphabetsnspace", function (value, element) {
     return this.optional(element) || /^[a-zA-Z ]*$/.test(value);
   })
+
+  // jQuery to handle form submission and message display  - Stay up to date with our latest news  
+  $('#emailForm').submit(function(event) {   debugger
+    event.preventDefault(); // Prevent form submission to server
+
+    // Display the message span
+    $('#message').fadeIn();
+  });
+
+
 })
 
 

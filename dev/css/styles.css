@@ -1955,6 +1955,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .vision_top img {
   width: 100%;
+  border-radius: 10px;
 }
 @media screen and (max-width: 1024px) {
   .vision_top img {
@@ -2345,6 +2346,7 @@ option {
 .collection__slidersingle {
   margin-right: 10px;
   padding: 80px 0px;
+  padding-top: 54px;
 }
 
 .collection__single-project {
@@ -2407,8 +2409,8 @@ option {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .collection__singlecont svg {
-    width: 213px;
-    height: 58px;
+    width: 155px;
+    height: 90px;
   }
 }
 
@@ -2467,6 +2469,7 @@ option {
   .hover__menuContainer .hover__menuwrap {
     max-width: 100%;
     float: none;
+    width: 100%;
   }
 }
 .hover__menuContainer .btnAg {
@@ -2528,7 +2531,7 @@ option {
 
 .pg__content {
   padding-top: 116px;
-  padding-bottom: 113px;
+  padding-bottom: 30px;
   width: 95%;
   margin: 0 auto;
 }

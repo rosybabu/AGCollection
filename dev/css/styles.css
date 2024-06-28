@@ -1332,6 +1332,16 @@ footer .footer__newsinput ::-ms-input-placeholder {
   text-decoration: underline;
 }
 
+.footer__container  .footer__link p {
+  @media only screen and (min-width: 275px) and (max-width: 767px) {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .footer__newsflex {
     display: block !important;

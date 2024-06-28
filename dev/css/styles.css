@@ -512,20 +512,20 @@ label {
   top: 0px;
 }
 
-.button__black__hover:hover svg {
+.btnAg:hover .button__black__hover svg {
   color: #ffffff;
 }
 
-.button__hover:hover svg {
+.btnAg:hover .button__hover svg {
   color: #000000;
   transform: rotate(-60deg);
 }
 
-.button__hover:hover path {
+.btnAg:hover .button__hover path {
   stroke: #000000;
 }
 
-.button__black__hover:hover path {
+.btnAg:hover .button__black__hover path {
   stroke: #ffffff;
 }
 
@@ -544,7 +544,7 @@ label {
   z-index: 2;
 }
 
-.button__hover:hover:before {
+.btnAg:hover .button__hover:before {
   left: 0;
 }
 
@@ -1038,21 +1038,49 @@ img.menulogo {
   display: inline-block;
   margin-left: 21px;
 }
-.head__social li:hover svg {
+.head__social li a:hover svg {
   fill: #fff;
 }
-.head__social li:hover svg path {
+.head__social li a:hover svg path {
   fill: #000;
 }
 
-li:nth-child(1):hover svg path:nth-child(1) {
+/* li:nth-child(1):hover svg path:nth-child(1) {
   fill: #fff;
 }
 
 li:nth-child(1):hover svg path:nth-child(2) {
+  fill: #000;
+} */
+.whatsapp__icon .whtsappicon__hover{
+  display: none;
+}
+.whatsapp__icon:hover .whtsappicon__hover{
+  display: inline-block;
+}
+.whatsapp__icon:hover .whtsappicon{
+  display:none;
+}
+.whatsapp__icon:hover  .whtsappicon__hover path:nth-child(1){
   fill: #fff;
 }
-
+.whatsapp__icon:hover  .whtsappicon__hover path:nth-child(2){
+  fill: #000;
+}
+.whatsapp__icon:hover  .whtsappicon__hover path:nth-child(4){
+  fill: #fff;
+}
+.main__logo.mob-hidden img {
+  width: 231px;
+  height: 53px;
+}
+.main__logo.desktop__hidden img{
+  width: 190px;
+  height: 44px;
+}
+/* .whatsapp__icon:hover  svg path:nth-child(1) {
+  fill: #fff;
+} */
 .head__email a {
   font-size: 16px;
   font-style: normal;
@@ -1205,6 +1233,36 @@ footer .footer__newsinput ::placeholder {
   line-height: 20px;
   /* 125% */
   text-transform: uppercase;
+}
+.footer__newsinput:hover .button__hover{
+  background-color: #fff;
+}
+.footer__newsinput:hover .button__hover svg {
+  color: #000000;
+  transform: rotate(-60deg);
+}
+
+.footer__newsinput:hover .button__hover path {
+  stroke: #000;
+}
+.input__btn:hover .button__hover{
+  background-color: #fff;
+}
+.input__btn:hover .button__hover svg {
+  color: #000000;
+  transform: rotate(-60deg);
+}
+
+.input__btn:hover .button__hover path {
+  stroke: #000;
+}
+.hdr__contentCls .hdr__btnwrap .btnAg:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.footer__newsflex{
+  align-items: center;
+
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   footer .footer__newsinput ::placeholder {
@@ -1893,7 +1951,6 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .vision_top img {
   width: 100%;
-  border-radius: 10px;
 }
 @media screen and (max-width: 1024px) {
   .vision_top img {
@@ -2282,7 +2339,6 @@ option {
 .collection__slidersingle {
   margin-right: 10px;
   padding: 80px 0px;
-  padding-top: 54px;
 }
 
 .collection__single-project {
@@ -2345,8 +2401,8 @@ option {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .collection__singlecont svg {
-    width: 155px;
-    height: 90px;
+    width: 213px;
+    height: 58px;
   }
 }
 
@@ -2405,7 +2461,6 @@ option {
   .hover__menuContainer .hover__menuwrap {
     max-width: 100%;
     float: none;
-    width: 100%;
   }
 }
 .hover__menuContainer .btnAg {

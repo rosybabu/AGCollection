@@ -638,17 +638,17 @@ label {
     left: 0px;
     top: 0px;
   }
-  .button__black__hover:hover svg{
+  .btnAg:hover .button__black__hover svg{
     color: $color-white;
   }
-  .button__hover:hover svg {
+  .btnAg:hover .button__hover svg {
     color: $color-black;
     transform: rotate(-60deg);
   }
-  .button__hover:hover path{
+  .btnAg:hover .button__hover path{
     stroke: $color-black;
   }
-  .button__black__hover:hover path{
+  .btnAg:hover .button__black__hover path{
     stroke: $color-white;
   }
   .button__black__hover:before {

@@ -1019,7 +1019,30 @@ img.menulogo {
     font-weight: 400;
     padding-bottom: 20px;
     line-height: 50px;
+    margin-bottom: 0px;
   }
+  .menu__list li a:hover:after {
+    bottom: 15px;
+  }
+  .contact__containerwrap input:focus ~ label, .contact__containerwrap input:valid ~ label,.contact__containerwrap input.error ~ .form-label{
+    top: -17px !important;
+  }
+.footer__link p{
+  font-size: 10px !important;
+        padding-bottom: 0px !important;
+        line-height: 16px !important;
+}
+.footer__col:nth-child(1) p:nth-child(3) {
+  display: none;
+}
+.footer__col:nth-child(2){
+    margin-top: -68px;
+}
+}
+.contact__containerwrap input.error ~ .form-label{
+  top: -17px !important;
+  font-size: 10px;
+    color: #ffffff;
 }
 .menu__list li a:hover:after {
   content: '';
@@ -2482,7 +2505,7 @@ option {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .hover__menuContainer .btnAg {
-    min-width: 120px;
+    min-width: 150px;
     padding: 3px 15px;
   }
 }

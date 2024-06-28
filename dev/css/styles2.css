@@ -619,4 +619,24 @@ color: white;
 #newsletter-success{
     color: white;
     padding-top: 10px;
+    @media only screen and (min-width: 275px) and (max-width: 767px) {
+        padding-top: 0px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+
+#contact-sucessmessage{
+    color: white;
+    @media only screen and (min-width: 275px) and (max-width: 767px) {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 275px) and (max-width: 767px) {  
+    .group.input__btn {
+        margin-left: -10px;
+    }
 }

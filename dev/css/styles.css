@@ -1022,7 +1022,7 @@ img.menulogo {
     margin-bottom: 0px;
   }
   .menu__list li a:hover:after {
-    bottom: 15px;
+    bottom: 15px !important;
   }
   .contact__containerwrap input:focus ~ label, .contact__containerwrap input:valid ~ label,.contact__containerwrap input.error ~ .form-label{
     top: -17px !important;
@@ -2564,7 +2564,7 @@ option {
 
 .pg__content {
   padding-top: 116px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   width: 95%;
   margin: 0 auto;
 }

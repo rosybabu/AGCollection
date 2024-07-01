@@ -228,14 +228,14 @@ $(document).ready(function () {
   main.humburger();
   main.slider();
   main.video();
-  main.contactValidn();
+  // main.contactValidn();
   main.hoverImg();
   // phone number regex 
   $.validator.addMethod(
     "uaePhone",
     function (value, element) {
       // UAE phone number pattern without the country code
-      var regex = /^[56789]\d{8}$/;
+      var regex = /^(?:\+971|971|0)?5[0-9]{8}$|^(?:\+971|971|0)?[2-4679][0-9]{7}$/;
       return this.optional(element) || regex.test(value);
     },
     "Phone Number is not valid"

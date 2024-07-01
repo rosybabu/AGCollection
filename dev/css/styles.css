@@ -1373,7 +1373,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
 
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .main__container {
-    padding-top: 116px;
+    padding-top: 84px;
   }
 }
 
@@ -2511,7 +2511,7 @@ option {
   border: 1px solid #ffffff !important;
   color: #ffffff !important;
   padding: 10px 15px;
-  text-align: left;
+  text-align: center;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .hover__menuContainer .btnAg {

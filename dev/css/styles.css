@@ -1718,7 +1718,7 @@ input[type="range"]:focus::-moz-range-thumb {
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .btn__collection {
     text-align: left;
-    min-width: 150px;
+    min-width: 160px;
     height: 24px;
     padding: 3px 10px;
   }
@@ -2510,8 +2510,8 @@ option {
   min-width: 180px;
   border: 1px solid #ffffff !important;
   color: #ffffff !important;
-  padding: 10px 15px;
-  text-align: center;
+  padding: 10px 30px;
+  text-align: left;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .hover__menuContainer .btnAg {

@@ -34,18 +34,6 @@
 
 }
 
-.diamondshape {
-    -webkit-mask-box-image: url(./../svg/Diamond_Guidelines.svg);
-    mask-image: url(./../svg/Diamond_Guidelines.svg); 
-    mask-position: center;
-    mask-repeat: no-repeat;
-}
-
-.diamondshape:hover {
-    -webkit-mask-box-image: none;
-    mask-image: none;
-}
-
 .whatwevalue_para {
     margin-top: 50px;
     margin-bottom: 100px;
@@ -461,7 +449,7 @@ line-height: 26px;
         font-style: normal;
         font-weight: 300;
         line-height: 24px;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 
     .vision_diamondImages {
@@ -640,3 +628,115 @@ color: white;
         margin-left: -10px;
     }
 }
+
+
+/******************  Diamond Shape CSS -  Vison Page  *************/
+
+    .diamond-image-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        @media only screen and (min-width: 275px) and (max-width: 767px) {  
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .diamond-img {
+        position: relative;
+        width: 33.33%;
+        height: 33.33%;
+        overflow: hidden;
+    }
+
+    .diamond-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .circle {
+        position: absolute;
+        width: 100%;
+        /* Full width of the diamond-img */
+        height: 100%;
+        /* Full height of the diamond-img */
+        border-radius: 50%;
+        background: white;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+
+    .top-left {
+        top: -50%;
+        left: -50%;
+    }
+
+    .top-right {
+        top: -50%;
+        right: -50%;
+    }
+
+    .bottom-left {
+        bottom: -50%;
+        left: -50%;
+    }
+
+    .bottom-right {
+        bottom: -50%;
+        right: -50%;
+    }
+
+    @keyframes hoverIn {
+        0% {
+            width: 100%;
+            height: 100%;
+        }
+
+        100% {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @keyframes hoverOut {
+        0% {
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .diamond-img:hover .circle {
+        animation-name: hoverIn;
+        animation-timing-function: ease-in-out;
+    }
+
+    .diamond-img:not(:hover) .circle {
+        animation-name: hoverOut;
+        animation-timing-function: ease-out;
+    }
+
+    @media screen and (max-width: 480px) {
+        .diamond-image-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .diamond-img {
+            position: relative;
+            width: 208px;
+            height: 208px;
+            overflow: hidden;
+        }
+    }
+
+/*************  Diamond Shape CSS - END  Vison Page *****************/

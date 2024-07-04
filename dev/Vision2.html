@@ -22,7 +22,7 @@
             <div class="main__hdr">
                 <div class="main__hdr-wrap d-flex">
                     <!-- Logo  -->
-                    <div class="main__logo">
+                    <div class="main__logo mob-hidden">
                         <a href=""><img src="images/logo.png" alt="Logo"></a>
                     </div>
                     <!-- right contents -->
@@ -101,32 +101,35 @@
                     </div>
                 </div>
                 
+                 
 
+                <div class="diamond-image-wrapper">
+                    <div class="diamond-img">
+                      <img src="images/Diamond_1.png" alt="Diamond_1">
+                      <div class="circle top-left"></div>
+                      <div class="circle top-right"></div>
+                      <div class="circle bottom-left"></div>
+                      <div class="circle bottom-right"></div>
+                    </div>
+                
+                    <div class="diamond-img">
+                      <img src="images/Diamond_2.png" alt="Diamond_2">
+                      <div class="circle top-left"></div>
+                      <div class="circle top-right"></div>
+                      <div class="circle bottom-left"></div>
+                      <div class="circle bottom-right"></div>
+                    </div>
+                
+                    <div class="diamond-img">
+                      <img src="images/Diamond_3.png" alt="Diamond_3">
+                      <div class="circle top-left"></div>
+                      <div class="circle top-right"></div>
+                      <div class="circle bottom-left"></div>
+                      <div class="circle bottom-right"></div>
+                    </div>
+                  </div>
 
-                <div class="vision_diamondImages">
-                    <div class="row">
-                        <div class="col-12 col-sm-4" >
-                            <div class="image-container">
-                                <img class="mask-image" src="images/diamondshapes/dshape1.png" alt="Masked Image">
-                                <img class="hover-image" src="images/visiontria1.png" alt="Hover Image">
-                            </div>                     
-                        </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="image-container">
-                                <img class="mask-image" src="images/diamondshapes/dshape2.png" alt="Masked Image">
-                                <img class="hover-image" src="images/visiontria2.png" alt="Hover Image">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 ">
-                            <div class="image-container">
-                                <img class="mask-image" src="images/diamondshapes/dshape3.png" alt="Masked Image">
-                                <img class="hover-image" src="images/visiontria3.png" alt="Hover Image">
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-
-
+                
                 <div class="whatwevalue_para">
                     <h5>What We Value</h5>
 
@@ -339,87 +342,5 @@
     <script src="js/lib/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 
-
-     <style>
-        /*  CSS for DIAMOND SHAPE ANIMATION - TEMPPORARY START */
-
-            .image-container {
-                position: relative;
-                width: 447px; /* Adjust as per your image size */
-                height: 447px; /* Adjust as per your image size */
-                overflow: hidden;
-            }
-            
-            .image-container img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: opacity 0.9s ease-out; /* Smooth transition */
-            }
-            
-            .hover-image {
-                opacity: 0; /* Initially hidden */
-            }
-            
-            .image-container:hover .hover-image {
-                opacity: 1; /* Show on hover */
-            }
-
-            /*  CSS for DIAMOND SHAPE ANIMATION - TEMPPORARY END   */
-
-
-
-
-
-            /*  CSS for DIAMOND SHAPE ANIMATION - TEMPPORARY 2 */
-
-            .image-container {
-                display: inline-block;
-                position: relative;
-                overflow: hidden;
-            }
-            
-            .image-wrapper {
-                position: relative;
-                overflow: hidden;
-                width: 300px; /* Adjust as needed */
-                height: 200px; /* Adjust as needed */
-            }
-            
-            .overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and transparency */
-                opacity: 0; /* Initially hidden */
-                transition: opacity 0.3s ease;
-            }
-            
-            .reveal {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 0;
-                height: 0;
-                transform: translate(-50%, -50%);
-                transition: width 0.8s ease, height 0.8s ease;
-            }
-            
-            .image-wrapper:hover .overlay {
-                opacity: 1; /* Show overlay on hover */
-            }
-            
-            .image-wrapper:hover .reveal {
-                width: 100%;
-                height: 100%;
-            }
-            
-            /*  CSS for DIAMOND SHAPE ANIMATION - TEMPPORARY 2  END*/
-
-     </style>
 </body>
 </html>

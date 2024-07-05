@@ -641,6 +641,7 @@ color: white;
         @media only screen and (min-width: 275px) and (max-width: 767px) {  
             padding-top: 20px;
             padding-bottom: 20px;
+            gap: 20px;
         }
     }
 

@@ -3899,3 +3899,57 @@ option {
 [data-aos=flip-down].aos-animate {
   transform: perspective(2500px) rotateX(0);
 }
+.contact_formsubs label {
+  color: #fff;
+font-family: "Saans TRIAL";
+font-size: 12px;
+font-style: normal;
+font-weight: 380;
+line-height: 19px; /* 158.333% */
+}
+.contact_formsubs{
+  position: relative;
+  display: flex;
+  align-items: start;
+  margin-bottom: 18px;
+  padding-left: 10px;
+}
+.contact_formsubs label {
+  position: relative;
+  cursor: pointer;
+  pointer-events: all;
+  top: 0;
+  left: 9px;
+}
+.contact_formsubs label a{
+  text-decoration: underline;
+}
+.contact_formsubs input{
+  width: 14px;
+  height: 14px;
+  accent-color: #fff;
+  background: #fff;
+  /* border: 3px solid #000; */
+  border-radius: 4px;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+.contact_formsubs input:focus{
+  outline: #fff;
+}
+.contact_formsubs input:focus ~ label,.contact_formsubs  input:valid ~ label{
+  top: 0;
+  font-size: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .contact_formsubs label {
+    font-size: 11px;
+  }
+  .contact_formsubs{
+    margin-bottom: 24px;
+  }
+  .contact_formsubs input:focus ~ label,.contact_formsubs  input:valid ~ label{
+    top: 0 !important;
+    font-size: 11px !important;
+  }
+}

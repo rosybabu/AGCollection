@@ -3920,6 +3920,7 @@ line-height: 19px; /* 158.333% */
   pointer-events: all;
   top: 0;
   left: 9px;
+  width: 95%;
 }
 .contact_formsubs label a{
   text-decoration: underline;

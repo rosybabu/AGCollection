@@ -3953,3 +3953,8 @@ line-height: 19px; /* 158.333% */
     font-size: 11px !important;
   }
 }
+.contact_formsubs+.error {
+  margin-top:-18px;
+  padding-left: 32px;
+  margin-bottom:18px;
+}

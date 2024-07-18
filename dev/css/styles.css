@@ -783,7 +783,9 @@ header {
 .video-container{
   /* height: calc(100vh - 134px); */
 }
-
+video{
+  width: 100%;
+}
 
 .main__logo {
   padding-left: 2.7%;

@@ -1630,7 +1630,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
     height: 0;
     /* transform: rotate(270deg);
     transform-origin: center center;  */
-    width: 100vh;
+    width: calc(100vh - 84px);
     height: 100vw;
     transform: translateY(calc(100vh - 103px)) rotate(-90deg);
     transform-origin: top left;

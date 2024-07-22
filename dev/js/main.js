@@ -58,13 +58,16 @@ var main = {
     $(".btn__watchvideo").click(function (e) {
       e.preventDefault();
       $(".video-container").show();
-      $(".homepage__content").css("margin-top","100vw");
+      if ($(window).width() <= 1025){
+        $(".home__videocontainer + .homepage__content").css("margin-top","100vw");
+      } 
       $(".home__videorow").hide();
       $("#myVideo")[0].play();
       $(".video-pause").show();
       $(".video-play").hide();
-      
+       
     })
+
     $(".videotoggle").click(function (e) {
       e.preventDefault();
       $(".video-container").hide();

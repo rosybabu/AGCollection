@@ -1628,8 +1628,12 @@ footer .footer__newsinput ::-ms-input-placeholder {
     width: 100%; /* Adjust as needed for portrait mode */
     padding-bottom: 100%; /* Adjust as needed for portrait mode */
     height: 0;
-    transform: rotate(270deg); /* Rotate the container */
-    transform-origin: center center; /* Set the origin to the center for proper rotation */
+    /* transform: rotate(270deg);
+    transform-origin: center center;  */
+    width: 100vh;
+    height: 100vw;
+    transform: translateY(calc(100vh - 103px)) rotate(-90deg);
+    transform-origin: top left;
 }
 
 .video-container iframe {

@@ -58,15 +58,18 @@ var main = {
     $(".btn__watchvideo").click(function (e) {
       e.preventDefault();
       $(".video-container").show();
+      $(".homepage__content").css("margin-top","100vw");
       $(".home__videorow").hide();
       $("#myVideo")[0].play();
       $(".video-pause").show();
       $(".video-play").hide();
+      
     })
     $(".videotoggle").click(function (e) {
       e.preventDefault();
       $(".video-container").hide();
       $(".home__videorow").show();
+
     })
 
     var video = $("#myVideo")[0];
@@ -224,6 +227,8 @@ var main = {
 }
 
 $(document).ready(function () {
+  $(".html5-main-video").css("width", "100% !important");
+ 
   AOS.init();
   main.humburger();
   main.slider();

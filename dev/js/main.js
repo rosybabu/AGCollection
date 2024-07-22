@@ -55,6 +55,13 @@ var main = {
   },
   //3.video
   video: function () {
+    var video = $('#main_video')[0];
+
+    video.addEventListener("timeupdate", function(){
+      if(this.currentTime >= 5 * 60) {
+          this.pause();
+      }
+  });
     $(".btn__watchvideo").click(function (e) {
       e.preventDefault();
       $(".video-container").show();
@@ -74,7 +81,7 @@ var main = {
       $(".home__videorow").show();
 
     })
-
+ 
     var video = $("#myVideo")[0];
     var progressBar = $("#progressBar");
     var isDragging = false;
@@ -231,7 +238,7 @@ var main = {
 
 $(document).ready(function () {
   $(".html5-main-video").css("width", "100% !important");
- 
+
   AOS.init();
   main.humburger();
   main.slider();

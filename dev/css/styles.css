@@ -1626,7 +1626,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
   .video-container {
     position: relative;
     width: 100%; /* Adjust as needed for portrait mode */
-    padding-bottom: 80%; /* Adjust as needed for portrait mode */
+    padding-bottom: 100%; /* Adjust as needed for portrait mode */
     height: 0;
     transform: rotate(270deg); /* Rotate the container */
     transform-origin: center center; /* Set the origin to the center for proper rotation */

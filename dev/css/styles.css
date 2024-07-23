@@ -1619,8 +1619,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
   display: none;
   position: relative;
   margin: 0 auto;
-  animation-name: zoom;
-  animation-duration: 0.9s;
+  
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   /* .video-container {
@@ -1659,6 +1658,12 @@ footer .footer__newsinput ::-ms-input-placeholder {
 }
 .video-container video {
   vertical-align: middle;
+}
+@media only screen and (min-width: 767px) {
+  .video-container{
+    animation-name: zoom;
+    animation-duration: 0.9s;
+  }
 }
 
 @keyframes zoom {
@@ -4020,4 +4025,97 @@ line-height: 19px; /* 158.333% */
 .html5-main-video {
   width: 100% !important;
   left: 0px !important;
+}
+.video-play {
+  width: 38px;
+}
+
+.video-unmute {
+  width: 30px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.videotoggle {
+  margin: 0 10px;
+}
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 1px;
+  background: white !important;
+  padding: 0px;
+  border-bottom: 0px;
+  margin: 0 10px;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #f50;
+  border-radius: 50%;
+  border: none;
+
+  /* box-shadow: -407px 0 0 400px #f50; emove this line */
+  transition: .2s ease-in-out;
+}
+
+/* Hover, active & focus Thumb: Webkit */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(255, 85, 0, .1)
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+/* Hover, active & focus Thumb: Firfox */
+
+input[type="range"]::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(255, 85, 0, .1)
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
 }

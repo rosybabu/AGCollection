@@ -55,13 +55,11 @@ var main = {
   },
   //3.video
   video: function () {
-    var video = $('#main_video')[0];
-
-    video.addEventListener("timeupdate", function(){
-      if(this.currentTime >= 5 * 60) {
-          this.pause();
-      }
-  });
+    var video1 = $('#main_video')[0];
+    setTimeout(function() {
+     video1.pause();
+    }, 61000);
+ 
     $(".btn__watchvideo").click(function (e) {
       e.preventDefault();
       $(".video-container").show();
@@ -79,7 +77,7 @@ var main = {
       e.preventDefault();
       $(".video-container").hide();
       $(".home__videorow").show();
-
+      $(".home__videocontainer + .homepage__content").css("margin-top","0px");
     })
  
     var video = $("#myVideo")[0];

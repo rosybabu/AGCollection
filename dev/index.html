@@ -159,9 +159,24 @@
                     </div>
                     <!-- The Modal -->
                     <div class="video-container">
-                        <video playsinline="" autoplay="" muted="" loop="" controls>
+                        <video playsinline="" autoplay=""  loop="" id="myVideo">
                             <source src="https://a8a689fd71c8a48a88e5ec956922ae6b-1565139310.me-south-1.elb.amazonaws.com/dx/api/dam/v1/collections/cfe859b2-ab5c-47fe-9364-3298b92e2bab/items/d987d67f-22af-4e72-9717-7beeb4871afc/renditions/86714986-c639-4d9f-8bd6-da0f47d7d45d?binary=true" type="video/mp4">
                      </video>
+                     <div class="controls">
+
+                        <div id="playPauseBtn">
+                            <img src="images/icons/play.png" alt="" class="video-play">
+                            <img src="images/icons/pause.svg" alt="" class="video-pause">
+                        </div>
+                        <input type="range" id="progressBar" value="0">
+                        <!-- <button id="stopBtn">Stop</button> -->
+        
+                        <div id="muteBtn">
+                            <img src="images/icons/mute.svg" alt="" class="video-mute">
+                            <img src="images/icons/unmute.png" alt="" class="video-unmute"></a>
+                        </div>
+                        <a href="" class="videotoggle"><img src="images/icons/toggle.svg" alt=""></a>
+                    </div>
                     </div>
                 </div>
                

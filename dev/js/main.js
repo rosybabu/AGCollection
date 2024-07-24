@@ -55,16 +55,50 @@ var main = {
   },
   //3.video
   video: function () {
-    var video1 = $('#main_video')[0];
-    setTimeout(function() {
-     video1.pause();
-    }, 61000);
- 
+
+    const startTime = 2; // Specify the start time in seconds
+    const endTime = 60; // Specify the end time in seconds
+
+    const video1 = $('#main_video')[0];
+
+    function initializeVideo() {
+        video1.currentTime = startTime;
+        video1.play();
+    }
+
+    video1.addEventListener('loadedmetadata', function() {
+        initializeVideo();
+    });
+
+    video1.addEventListener('timeupdate', function() {
+        // Stop the video at the specified end time
+        if (video1.currentTime >= endTime) {
+            video1.pause();
+            video1.currentTime = startTime; // Reset to the start time
+        }
+    });
+
+    video1.addEventListener('pause', function() {
+        // Reset to the start time when paused
+        if (video1.currentTime < endTime) {
+            video1.currentTime = startTime;
+        }
+    });
+
+    video1.addEventListener('ended', function() {
+        // Reset to the start time when the video ends
+        video1.currentTime = startTime;
+    });
+
     $(".btn__watchvideo").click(function (e) {
       e.preventDefault();
       $(".video-container").show();
+      pdtop=$(window).height() ;
+      // hdrtop=$('header').height();
+      // topval=pdtop+hdrtop;
+      console.log(pdtop);
       if ($(window).width() <= 1025){
-        $(".home__videocontainer + .homepage__content").css("margin-top","100vw");
+        $(".home__videocontainer + .homepage__content").css("margin-top",'100vh');
       } 
       $(".home__videorow").hide();
       $("#myVideo")[0].play();
@@ -76,6 +110,8 @@ var main = {
     $(".videotoggle").click(function (e) {
       e.preventDefault();
       $(".video-container").hide();
+      var video = $("#myVideo").get(0);
+      video.pause();
       $(".home__videorow").show();
       $(".home__videocontainer + .homepage__content").css("margin-top","0px");
     })

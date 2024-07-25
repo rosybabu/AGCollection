@@ -93,13 +93,11 @@ var main = {
     $(".btn__watchvideo").click(function (e) {
       e.preventDefault();
       $(".video-container").show();
+      $('.home__videocontainer').addClass("videoHt");
       pdtop=$(window).height() ;
-      // hdrtop=$('header').height();
-      // topval=pdtop+hdrtop;
-      console.log(pdtop);
-      if ($(window).width() <= 1025){
-        $(".home__videocontainer + .homepage__content").css("margin-top",'100vh');
-      } 
+      // if ($(window).width() <= 1025){
+      //   $(".home__videocontainer + .homepage__content").css("margin-top",'100vw');
+      // } 
       $(".home__videorow").hide();
       $("#myVideo")[0].play();
       $(".video-pause").show();
@@ -110,10 +108,11 @@ var main = {
     $(".videotoggle").click(function (e) {
       e.preventDefault();
       $(".video-container").hide();
+      $('.home__videocontainer').removeClass("videoHt");
       var video = $("#myVideo").get(0);
       video.pause();
       $(".home__videorow").show();
-      $(".home__videocontainer + .homepage__content").css("margin-top","0px");
+      // $(".home__videocontainer + .homepage__content").css("margin-top","0px");
     })
  
     var video = $("#myVideo")[0];
@@ -301,6 +300,26 @@ $(document).ready(function () {
     $('#message').fadeIn();
   });
 
+// Map your choices to your option value
+var lookup = {
+  'jvc': ['1 Bedroom', '2 Bedroom', '3 Bedroom', 'Penthouse'],
+  'businessbay': ['2 Bedroom', '3 Bedroom', '4 Bedroom', '5 Bedroom', 'Penthouse', 'Skyvilla']
+};
+
+// When an option is changed, search the above for matching choices
+$('#contactinterest').on('change', function() {
+  // Set selected option as variable
+  var selectValue = $(this).val();
+
+  // Empty the target field
+  $('#contactinteresttype').empty();
+  
+  // For each chocie in the selected option
+  for (i = 0; i < lookup[selectValue].length; i++) {
+     // Output choice in the target field
+     $('#contactinteresttype').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+  }
+});
 
 })
 

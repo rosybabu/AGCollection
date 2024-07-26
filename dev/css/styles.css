@@ -1074,7 +1074,7 @@ img.menulogo {
   display: none;
 }
 .footer__col:nth-child(2){
-    margin-top: -68px;
+    /* margin-top: -68px; */
 }
 }
 .contact__containerwrap input.error ~ .form-label{
@@ -1369,6 +1369,9 @@ footer .footer__newsinput ::-ms-input-placeholder {
 .bottom__footer {
   padding-top: 39px;
 }
+.bottom__footer .footer__col:nth-child(1){
+  display: none;
+}
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .bottom__footer .bottom__footerwrap {
     flex-wrap: wrap;
@@ -1377,15 +1380,16 @@ footer .footer__newsinput ::-ms-input-placeholder {
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .bottom__footer .footer__col:nth-child(1) {
     order: 1;
+    display: none;
   }
   .bottom__footer .footer__col:nth-child(2) {
-    order: 3;
+    order: 1;
   }
   .bottom__footer .footer__col:nth-child(3) {
     order: 2;
   }
   .bottom__footer .footer__col:nth-child(4) {
-    order: 4;
+    order: 3;
   }
 }
 

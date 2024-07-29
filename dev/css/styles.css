@@ -1162,7 +1162,7 @@ li:nth-child(1):hover svg path:nth-child(2) {
   margin: 0 auto;
 }
 .footer__container .footer__logo {
-  padding-bottom: 53px;
+  /* padding-bottom: 53px; */
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .footer__container .footer__logo {
@@ -1212,6 +1212,7 @@ li:nth-child(1):hover svg path:nth-child(2) {
   display: inline-block;
   margin-right: 22px;
   transition: .1s ease;
+ 
 }
 .ftr__social li:hover svg {
   fill: #ffffff;
@@ -1395,8 +1396,11 @@ footer .footer__newsinput ::-ms-input-placeholder {
 
 .footer__link a {
   text-decoration: underline;
+  font-size: 14px !important;
 }
-
+.footer__link p{
+  font-size: 14px !important;
+}
 .footer__container  .footer__link p {
   @media only screen and (min-width: 275px) and (max-width: 767px) {
     font-size: 10px;
@@ -1406,10 +1410,12 @@ footer .footer__newsinput ::-ms-input-placeholder {
   }
 }
 
-
+.footer__newsflex {
+  display: none !important;
+}
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .footer__newsflex {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -1436,7 +1442,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
   }
 }
 .homepage__content .homepage__content-left .btnAg {
-  min-width: 183px;
+  min-width: 150px;
   margin-bottom: 20px;
   padding: 9px 14px;
   text-align: left;
@@ -1444,7 +1450,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .homepage__content .homepage__content-left .btnAg {
-    min-width: 150px;
+    min-width: 120px;
     padding: 3px 10px;
     height: 26px;
     margin-bottom: 15px;
@@ -1784,12 +1790,13 @@ input[type="range"]:focus::-moz-range-thumb {
 .btn__collection {
   border: 1px solid #ffffff;
   margin-top: 30px;
-  min-width: 250px;
+  min-width: 135px;
+  text-align: left;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .btn__collection {
     text-align: left;
-    min-width: 160px;
+    min-width: 105px;
     height: 24px;
     padding: 3px 10px;
   }
@@ -2578,7 +2585,7 @@ option {
 }
 .hover__menuContainer .btnAg {
   margin-top: 20px;
-  min-width: 180px;
+  min-width: 150px;
   border: 1px solid #ffffff !important;
   color: #ffffff !important;
   padding: 10px 30px;
@@ -2586,7 +2593,7 @@ option {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .hover__menuContainer .btnAg {
-    min-width: 150px;
+    min-width: 110px;
     padding: 3px 15px;
   }
 }
@@ -4139,4 +4146,10 @@ select {
 }
 select:focus+.selectarrow  {
   transform: translateY(-50%) rotate(180deg) !important;
+}
+.ftr__social + p {
+  display: flex;
+a{
+  margin-left: 5px;
+};
 }

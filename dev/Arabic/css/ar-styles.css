@@ -1,0 +1,70 @@
+.ar__theme {
+    header {
+        direction: ltr;
+    }
+
+    .main__logo.mob-hidden img {
+        width: 186px;
+        height: 58px;
+    }
+
+    .btn__hdr {
+        width: 160px;
+    }
+
+    .hdr__contentwrap {
+        align-items: center;
+    }
+
+    .switch {
+        display: block;
+    }
+
+    .hdr__btnwrap {
+        margin-right: 0;
+    }
+
+    .homepage__content .homepage__content-left .homepage__content-title {
+        font-family: "Noto Kufi Arabic", sans-serif;
+        max-width: 827px;
+
+    }
+
+    footer .footer__newstitle h6 {
+        text-align: right;
+    }
+
+    footer .footer__newsinput .button__hover {
+        right: auto;
+        left: 0px;
+    }
+
+    footer .footer__newsinput .button__hover svg {
+        transform: rotate(180deg);
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        direction: ltr
+    }
+
+    .footer__newsinput:hover .button__hover svg {
+        transform: rotate(-60deg) !important;
+    }
+    .partners_link{
+        left: 20px;
+        right: auto;
+    }
+}
+
+[dir='rtl'] .slick-slide {
+    float: left
+}
+
+@media screen and (max-width: 1024px) {
+    .ar__theme {
+        .home__videocontainer {
+            direction: ltr;
+        }
+    }
+}

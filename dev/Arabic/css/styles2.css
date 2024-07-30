@@ -1,0 +1,743 @@
+/* Styles for Other Pages */
+
+/***************  The Vision Page  CSS  **********************/
+
+.visionh3 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 90px;
+
+}
+
+.paramain {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.vision_smallpara {
+    color: #000;
+    font-family: "Saans TRIAL";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    width: 36%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 100px;
+}
+
+.vision_diamondImages {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.whatwevalue_para {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.visionimage_2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 100%;
+}
+.visionimage_2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.visionimage_3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: inline-block;
+    border-left: solid 30px #000;
+    border-right: solid 30px #000;
+    background: #000;
+    width: 100%;
+}
+
+.visionimage_3 img{
+    width: 100%;
+}
+
+.vision_ourpartners {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-left: solid 30px #000;
+    border-right: solid 30px #000;
+    background: #000;
+}
+
+.vision_ourpartners p {
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.ourpart_head {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 70px;
+    color: white;
+    width: 65%;
+    margin-bottom: 140px;
+}
+.img-mob{
+    display: none;
+}
+.value_div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+    display: flex;
+}
+.value_div:hover .value_smalltext{
+    /* opacity: 1; */
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.value_div p {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+.value_smalltext{
+    width: 50%;
+    /* opacity: 0;
+    transition: .1s ease; */
+    animation: hoverdisplay 1ms backwards paused;
+}
+@keyframes hoverdisplay {
+    0% {
+     
+      opacity: 0;
+      max-height:0;
+      
+    }
+    100% {
+      
+      opacity: 1;
+  
+      
+    }
+  }
+.value_smalltext p {
+    width: 600px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: justify;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 72px;
+    color: #000;
+
+/* font-family: "Saans TRIAL"; */
+font-size: 16px;
+font-style: normal;
+font-weight: 380;
+line-height: 26px;
+}
+
+.val_number {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 5.5%;
+    padding-top: 1.2%;
+}
+
+.whatwevalue_para h5 {
+    color: rgba(0, 0, 0, 0.30);
+    /* font-family: Saans; */
+    font-size: 30px;
+    /* font-family: Saans; */
+}
+
+.partners_namehead {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.partners_namehead:hover {
+    opacity: 1;
+}
+
+.partners_name {
+    border-bottom: 1px solid #fff;
+    /* opacity: 0.6; */
+    position: relative;
+}
+
+.partners_link {
+    color: white;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    padding: 7px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 180px;
+    padding: 7px 30px;
+    text-align: left;
+}
+
+.arrowright {
+    /*background: url(./../images/arrowleft.png); */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.visionpage_box {
+    padding-top: 116px;
+}
+
+/***************  News Article  CSS  **********************/
+
+.Newsarticle_head {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 523px;
+
+    @media (max-width: 576px) {
+        font-size: 22px;
+    }
+}
+
+.newsart_rightpara {
+    font-size: 16px;
+    margin-bottom: 100px;
+    @media (max-width: 576px) {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+}
+
+
+.newsarticle_cont {
+    padding-top: 116px;
+}
+
+.newsart_content {
+    padding-top: 100px;
+    margin-bottom: 35px;
+    @media (max-width: 1024px) {
+        padding-top: 0;
+    }
+}
+.newsart_content .col-12.col-sm-7{
+    width: 65%;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+.newsart_imagecont .col-12.col-sm-7{
+    width: 58%;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+.newsart_date {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.30);
+    margin-bottom: 20px;
+
+    @media (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+
+.backtonewsbtn {
+    color: #000;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 48px;
+    float: left;     
+    @media (max-width: 576px) {
+        margin-bottom: 20px;
+    }
+}
+
+
+ .backtonews_div{
+    position: relative;
+ }
+
+.backtonewsArrow {
+    background: url("./../images/ArrowBlackLeft.png") no-repeat;
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    background-size: 34px 34px;
+    top: 1px;
+    left: 0px;
+    position: absolute;
+}
+
+.newsart_imagecont {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    @media (max-width: 576px) {
+        margin-top: 15px;
+    }
+}
+
+.NewsArt_ImgDiv {
+    max-width: 599px;
+    max-height: 500px;
+
+    @media (max-width: 576px) {
+        margin-bottom: 15px;
+    }
+}
+
+
+.NewsArt_ImgDiv img {
+    object-fit: cover;
+    width: 599px;
+    height: 500px;
+    border-radius: 10px;
+
+    @media (max-width: 576px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.NewsArt_ImgDiv_2 {
+    max-width: 751px;
+    max-height: 500px;
+}
+
+.NewsArt_ImgDiv_2 img {
+    object-fit: cover;
+    width: 751px;
+    height: 500px;
+    border-radius: 10px;
+
+    @media (max-width: 576px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.prevnextbtn_box {
+    /* background: #000; */
+    height: 35px;
+    border-radius: 100px;
+   
+    position: relative;
+    background: linear-gradient(to left, transparent 50%, #000 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    &:hover{
+        background-position: left;
+    }
+}
+
+.prevnextbtn_box span.prev_link {
+    color: #000;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    float: left;
+    text-transform: uppercase;
+    padding-left: 45px;
+
+    @media (max-width: 576px) {
+        padding: 16px 0px;
+        padding-left: 33px;
+    }
+}
+
+.leftarrow {
+    background: url("./../images/ArrowBlackLeft.png") no-repeat;
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    background-size: 34px 34px;
+    top: 1px;
+    left: 0px;
+    position: absolute;
+}
+
+.rightarrow {
+    background: url("./../images/ArrowBlack1.png") no-repeat;
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    background-size: 34px 34px;
+    background-size: 34px 34px;
+    top: 1px;
+    right: 0px;
+    position: absolute;
+}
+
+.prevnextbtn_box span.next_link {
+    color: #000;
+    float: right;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-right: 80px;
+    @media (max-width: 576px) {
+        padding: 16px 0px;
+        padding-left: 33px;
+    }
+}
+
+.prevnextHideMob {
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .visionh3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .paramain {
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .vision_smallpara {
+        width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+
+    .vision_diamondImages {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .value_smalltext {
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+        clear: both;
+        opacity: 1;
+        animation: none;
+    }
+
+    .value_div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.img-mob{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 160px;
+    height: 160px;
+}
+    .val_number {
+        float: left;
+    }
+
+    .value_div p {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 45px;
+        float: left;
+        padding-bottom: 30px;
+        padding-left: 47px;
+width: 94%;
+    }
+
+    .whatwevalue_para {
+        margin-bottom: 0px;
+    }
+
+    .visionimage_2 {
+        margin-top: 0px;
+        margin-bottom: 0px
+    }
+
+    .ourpart_head {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 45px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .vision_ourpartners {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .vision_ourpartners p {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        opacity: 0.6;
+    }
+
+    .partners_namehead {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 50px;
+        opacity: 1;
+        float: left;
+        padding-bottom: 15px;
+    }
+
+    .partners_link {
+        position: relative;
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 180px;
+        margin-bottom: 15px;
+        clear: both;
+        margin-top: 15px;
+       
+    }
+
+    .partners_name {
+        opacity: 1;
+        padding-top: 15px;
+       
+    }
+  
+
+    .partLeftIcon {
+        width: 40px;
+        display: inline-block;
+        float: left;
+    }
+}
+.partners_name:hover .partLeftIcon path{
+    fill: white;
+}
+.partners_name:hover .partners_namehead{
+color: white;
+}
+.partners_name:hover{
+    opacity: 1;
+}
+.hover__imgshow{
+    display: none;
+}
+.vision_ourpartnersflex {
+    display: flex;
+    justify-content: space-between;
+}
+.visionimage_3:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.visionimage_3  img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .1s ease-in-out;
+    transition: .5s ease-in-out;
+    /* overflow: hidden; */
+    border-radius:10px;
+}
+.visionimage_3{
+    overflow:hidden;
+    vertical-align: middle;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1350px) {
+    footer .footer__newstitle h6{
+        font-size: 35px;
+    }
+}
+
+#newsletter-success{
+    color: white;
+    padding-top: 10px;
+    @media only screen and (min-width: 275px) and (max-width: 767px) {
+        padding-top: 0px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+
+#contact-sucessmessage{
+    color: white;
+    @media only screen and (min-width: 275px) and (max-width: 767px) {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 275px) and (max-width: 767px) {  
+    .group.input__btn {
+        margin-left: -10px;
+    }
+}
+
+
+/******************  Diamond Shape CSS -  Vison Page  *************/
+
+    .diamond-image-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        @media only screen and (min-width: 275px) and (max-width: 767px) {  
+            padding-top: 20px;
+            padding-bottom: 20px;
+            gap: 20px;
+        }
+    }
+
+    .diamond-img {
+        position: relative;
+        width: 33.33%;
+        height: 33.33%;
+        overflow: hidden;
+    }
+
+    .diamond-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .circle {
+        position: absolute;
+        width: 100%;
+        /* Full width of the diamond-img */
+        height: 100%;
+        /* Full height of the diamond-img */
+        border-radius: 50%;
+        background: white;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+
+    .top-left {
+        top: -50%;
+        left: -50%;
+    }
+
+    .top-right {
+        top: -50%;
+        right: -50%;
+    }
+
+    .bottom-left {
+        bottom: -50%;
+        left: -50%;
+    }
+
+    .bottom-right {
+        bottom: -50%;
+        right: -50%;
+    }
+
+    @keyframes hoverIn {
+        0% {
+            width: 100%;
+            height: 100%;
+        }
+
+        100% {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @keyframes hoverOut {
+        0% {
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .diamond-img:hover .circle {
+        animation-name: hoverIn;
+        animation-timing-function: ease-in-out;
+    }
+
+    .diamond-img:not(:hover) .circle {
+        animation-name: hoverOut;
+        animation-timing-function: ease-out;
+    }
+
+    @media screen and (max-width: 480px) {
+        .diamond-image-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .diamond-img {
+            position: relative;
+            width: 208px;
+            height: 208px;
+            overflow: hidden;
+        }
+    }
+
+/*************  Diamond Shape CSS - END  Vison Page *****************/

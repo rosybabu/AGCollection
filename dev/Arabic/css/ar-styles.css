@@ -126,6 +126,28 @@ font-weight: 400;
     .collection__cont{
         float: left;
     }
+    .homepage__slidercontent{
+width: 100%;
+    }
+    .homepage__slidersection .homepage__slidertext h5{
+        text-align: center;
+    }
+    .ftr__social li{
+        margin-left: 22px;
+        margin-right: 0px;
+    }
+    footer .footer__newsinput input[type="text"]{
+        padding: 10px 21px;
+    }
+    .visionh3{
+        text-align: right;
+    }
+    footer .footer__newstitle h6{
+        font-family: "Noto Kufi Arabic", sans-serif;
+    }
+    .footer__container .footer__link p{
+        font-size: 14px;
+    }
 }
 
 [dir='rtl'] .slick-slide {

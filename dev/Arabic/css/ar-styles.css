@@ -27,7 +27,7 @@
     .homepage__content .homepage__content-left .homepage__content-title {
         font-family: "Noto Kufi Arabic", sans-serif;
         max-width: 827px;
-
+        font-size: 75px;
     }
 
     footer .footer__newstitle h6 {
@@ -42,7 +42,9 @@
     footer .footer__newsinput .button__hover svg {
         transform: rotate(180deg);
     }
-
+    .homepage__slidersection .homepage__slidertext h5{
+        font-family: "Noto Kufi Arabic", sans-serif;
+    }
     .slick-slider .slick-track,
     .slick-slider .slick-list {
         direction: ltr
@@ -51,9 +53,78 @@
     .footer__newsinput:hover .button__hover svg {
         transform: rotate(-60deg) !important;
     }
-    .partners_link{
+
+    .partners_link {
         left: 20px;
         right: auto;
+    }
+
+    .whatwevalue_para h5 {
+        text-align: right;
+    }
+
+    .partners_link {
+        padding: 7px 30px 7px 50px;
+    }
+
+    .partners_link .button__hover {
+        left: 0px;
+        right: auto;
+    }
+
+    .partners_link .button__hover svg {
+        transform: rotate(180deg);
+    }
+
+    .partners_link:hover .button__hover svg {
+        color: #000000;
+        transform: rotate(-60deg) !important;
+    }
+
+    .visionh3 {
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: 75px;
+font-style: normal;
+font-weight: 400;
+    }
+
+    .vision_fulldiv {
+        direction: ltr;
+    }
+
+    .vision_smallpara {
+        margin-left: 0;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .value_div p {
+        font-family: "Noto Kufi Arabic", sans-serif;
+    }
+
+    .ourpart_head {
+        font-family: "Noto Kufi Arabic", sans-serif;
+    }
+
+    .partners_namehead {
+        margin-right: 40px;
+    }
+
+    .partLeftIcon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+    }
+    .collection__title{
+        direction: rtl;
+    }
+    .collection__title h3{
+        text-align: right;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: 60px;
+    }
+    .collection__cont{
+        float: left;
     }
 }
 

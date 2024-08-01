@@ -179,7 +179,31 @@ var main = {
   },
   //4.Function to implement contactform validation
   contactValidn: function () {
-    $("#contactForm").validate({
+    $(function () {
+      $('#contactFormPhone').intlTelInput({
+          autoHideDialCode: true,
+          autoPlaceholder: "OFF",
+          // dropdownContainer:$(".intl-tel-input"),
+          formatOnDisplay: true,
+         hiddenInput: "full_number",
+          initialCountry: "ae",
+        //  nationalMode: true,
+          placeholderNumberType: "MOBILE",
+          // preferredCountries: ['us','gb','in'],
+          separateDialCode: true,
+          fixDropdownWidth:true,
+          formatAsYouType:true,
+          countrySearch:true,
+          validationNumberType: 'MOBILE',
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+      
+      $(".contactFormPhone").focus(function(){
+       $(this).parents(".group").find("label").hide();
+      });
+    });
+    
+    $("#contactFormUi").validate({
       rules: {
         contactFormName: {
           required: true,
@@ -273,10 +297,11 @@ $(document).ready(function () {
   $(".html5-main-video").css("width", "100% !important");
   main.hoverImg();
   AOS.init();
+  main.contactValidn();
   main.humburger();
   main.slider();
   main.video();
-  // main.contactValidn();
+  
  
   // phone number regex 
   $.validator.addMethod(
@@ -320,6 +345,9 @@ $('#contactinterest').on('change', function() {
      $('#contactinteresttype').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
   }
 });
+
+
+
 
 })
 

@@ -4199,3 +4199,6 @@ top: 0px;
 .intl-tel-input .country-list .country.highlight{
   background-color: transparent;
 }
+.hide {
+  display: none;
+}

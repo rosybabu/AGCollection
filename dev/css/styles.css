@@ -4194,11 +4194,17 @@ top: 0px;
     backdrop-filter: blur(5px);
 }
 .intl-tel-input .flag-container{
-  top: -6px;
+  top: -6px !important;
+  height: 36px;
 }
 .intl-tel-input .country-list .country.highlight{
   background-color: transparent;
 }
+
 .hide {
   display: none;
+}
+.row__cls{
+  flex-wrap: wrap;
+  display: flex;
 }

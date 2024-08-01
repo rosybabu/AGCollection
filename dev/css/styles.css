@@ -4153,3 +4153,49 @@ a{
   margin-left: 5px;
 };
 }
+/* phone flag  */
+.input-group > .intl-tel-input.allow-dropdown {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group > .intl-tel-input.allow-dropdown > .flag-container {
+	z-index: 4;
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+    }
+}
+.intl-tel-input{
+  width: 100%;
+}
+.intl-tel-input .country-list .country-name{
+  display: none;
+}
+.intl-tel-input ~ label{
+  padding-left: 92px;
+  color: rgba(255, 255, 255, 0.60);
+font-size: 16px;
+font-style: normal;
+font-weight: 380;
+line-height: 26px;
+top: 0px;
+}
+.intl-tel-input .country-list{
+  background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+}
+.intl-tel-input .flag-container{
+  top: -6px;
+}
+.intl-tel-input .country-list .country.highlight{
+  background-color: transparent;
+}

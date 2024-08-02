@@ -213,17 +213,26 @@ iframe{
     margin: 0 auto;
     animation-name: zoom;
     animation-duration: 0.9s;
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    padding-bottom: 45%; /* 16:9 aspect ratio */
+    height: 0;
     @include mobile {
       overflow: auto;
     }
     iframe{
-      @include mobile {
-        height: 100vh;
-        transform: rotate(270deg);
-        width: 100vh;
-        object-fit: cover;
-        max-height: 100%;
-      }
+      // @include mobile {
+      //   height: 100vh;
+      //   transform: rotate(270deg);
+      //   width: 100vh;
+      //   object-fit: cover;
+      //   max-height: 100%;
+      // }
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     }
     video {
         vertical-align: middle;

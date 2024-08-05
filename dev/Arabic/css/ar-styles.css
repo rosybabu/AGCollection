@@ -43,9 +43,11 @@
     footer .footer__newsinput .button__hover svg {
         transform: rotate(180deg);
     }
-    .homepage__slidersection .homepage__slidertext h5{
+
+    .homepage__slidersection .homepage__slidertext h5 {
         font-family: "Noto Kufi Arabic", sans-serif;
     }
+
     .slick-slider .slick-track,
     .slick-slider .slick-list {
         direction: ltr
@@ -85,8 +87,8 @@
     .visionh3 {
         font-family: "Noto Kufi Arabic", sans-serif;
         font-size: 75px;
-font-style: normal;
-font-weight: 400;
+        font-style: normal;
+        font-weight: 400;
     }
 
     .vision_fulldiv {
@@ -116,115 +118,207 @@ font-weight: 400;
         height: 40px;
         display: inline-block;
     }
-    .collection__title{
+
+    .collection__title {
         direction: rtl;
     }
-    .collection__title h3{
+
+    .collection__title h3 {
         text-align: right;
         font-family: "Noto Kufi Arabic", sans-serif;
         font-size: 60px;
     }
-    .collection__cont{
+
+    .collection__cont {
         float: left;
     }
-    .homepage__slidercontent{
-width: 100%;
+
+    .homepage__slidercontent {
+        width: 100%;
     }
-    .homepage__slidersection .homepage__slidertext h5{
+
+    .homepage__slidersection .homepage__slidertext h5 {
         text-align: center;
     }
-    .ftr__social li{
+
+    .ftr__social li {
         margin-left: 22px;
         margin-right: 0px;
     }
-    footer .footer__newsinput input[type="text"]{
+
+    footer .footer__newsinput input[type="text"] {
         padding: 10px 21px;
         font-size: 16px;
     }
-    .visionh3{
+
+    .visionh3 {
         text-align: right;
     }
-    .home__videocontent h2{
+
+    .home__videocontent h2 {
         font-family: "Noto Kufi Arabic", sans-serif;
     }
-    footer .footer__newstitle h6{
+
+    footer .footer__newstitle h6 {
         font-family: "Noto Kufi Arabic", sans-serif;
     }
-    .footer__container .footer__link p{
+
+    .footer__container .footer__link p {
         font-size: 14px;
     }
-    .hover__menuContainer{
-direction: ltr;
+
+    .hover__menuContainer {
+        direction: ltr;
     }
-    .contact__containerwrap label{
+
+    .contact__containerwrap label {
         right: 15px;
         left: auto;
     }
-    .contact_formsubs label{
+
+    .contact_formsubs label {
         text-align: right;
     }
-    .contact__containerwrap .contact__title{
-        font-family: "Noto Kufi Arabic", sans-serif; 
+
+    .contact__containerwrap .contact__title {
+        font-family: "Noto Kufi Arabic", sans-serif;
         width: 100%;
     }
-    .contact_formsubs{
+
+    .contact_formsubs {
         padding-right: 10px;
         padding-left: 0;
     }
-    .input__btn{
+
+    .input__btn {
         padding-left: 0px;
         margin-right: 10px;
     }
-    .input__btn .button__hover{
+
+    .input__btn .button__hover {
         left: 0px;
         right: auto;
         margin-left: 10px;
     }
-    .submit__btn{
+
+    .submit__btn {
         text-align: right;
     }
-    .input__btn .button__hover svg{
+
+    .input__btn .button__hover svg {
         transform: rotate(180deg);
     }
-    .contact__successcontent{
+
+    .contact__successcontent {
         padding-left: 0;
         padding-right: 68px;
     }
-    .contact__successcontainer h3{
-        text-align: right;    
+
+    .contact__successcontainer h3 {
+        text-align: right;
         font-size: 60px;
-        font-family: "Noto Kufi Arabic", sans-serif; 
+        font-family: "Noto Kufi Arabic", sans-serif;
     }
-    .contact__successcontainer .error__title{
+
+    .contact__successcontainer .error__title {
         margin-left: 30px;
         margin-right: 0px;
     }
-    .hover__menuwrap .button__hover{
+
+    .hover__menuwrap .button__hover {
         left: 0px;
         right: auto;
         /* margin-left: 10px; */
     }
-    .hover__menuwrap .btnAg{
+
+    .hover__menuwrap .btnAg {
         text-align: right;
     }
-    
-    .hover__menuwrap .button__hover svg{
+
+    .hover__menuwrap .button__hover svg {
         transform: rotate(180deg);
     }
-    .btn_takemeback .button__hover{
+
+    .btn_takemeback .button__hover {
         left: 0px;
         right: auto;
     }
-    .btn_takemeback svg{
+
+    .btn_takemeback svg {
         transform: rotate(180deg);
     }
-    .contact__successcontainer p{
-        font-family: "Noto Kufi Arabic", sans-serif; 
+
+    .contact__successcontainer p {
+        font-family: "Noto Kufi Arabic", sans-serif;
         font-size: 30px;
     }
+
     .contact__successcontainer .btn_takemeback {
         width: 183px;
         text-align: right;
+    }
+
+    .blog-post-title {
+        font-family: "Noto Kufi Arabic", sans-serif;
+        text-align: right;
+        font-weight: 400;
+    }
+
+    .blog-post-date {
+        line-height: 28px;
+    }
+
+    .blog-post-excerpt {
+        line-height: 28px;
+        font-size: 16px;
+        max-width: 520px;
+    }
+
+    .card-date {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .card-excerpt strong {
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .card-excerpt {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .card-details .btnAg {
+        min-width: 143px;
+        max-width: 143px;
+    }
+    .Newsarticle_head{
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; 
+    }
+    .newsart_date{
+        font-size: 16px;
+font-style: normal;
+font-weight: 380;
+line-height: 28px; 
+    }
+    .backtonews_div{
+        width: auto;
+        display: inline-block;
+    }
+    .backtonewsArrow{
+        top: 0px;
     }
 }
 

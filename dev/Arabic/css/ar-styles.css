@@ -300,25 +300,52 @@
         min-width: 143px;
         max-width: 143px;
     }
-    .Newsarticle_head{
+
+    .Newsarticle_head {
         font-family: "Noto Kufi Arabic", sans-serif;
         font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
     }
-    .newsart_date{
+
+    .newsart_date {
         font-size: 16px;
-font-style: normal;
-font-weight: 380;
-line-height: 28px; 
+        font-style: normal;
+        font-weight: 380;
+        line-height: 28px;
     }
-    .backtonews_div{
+
+    .backtonews_div {
         width: auto;
         display: inline-block;
     }
-    .backtonewsArrow{
+
+    .backtonewsArrow {
         top: 0px;
+    }
+
+    .newsart_rightpara p {
+        margin-bottom: 20px;
+        line-height: 28px;
+    }
+    .backtonews_div .btnAg{
+        min-width: 180px;
+    }
+    .backtonews_div .button__hover {
+        left: 0px;
+        right: auto;
+    }
+
+    .backtonews_div svg {
+        transform: rotate(180deg);
+    }
+    .footer__container .footer__col a:hover,.footer__container .footer__col p:hover{
+        text-decoration: none;
+        opacity: 0;
+    }
+    .footer__link a:hover, .footer__link p:hover{
+        opacity: 1 !important;
     }
 }
 

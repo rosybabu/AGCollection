@@ -2198,7 +2198,7 @@ input[type="range"]:focus::-moz-range-thumb {
 }
 .contact__containerwrap input:focus ~ label,
 .contact__containerwrap input:valid ~ label {
-  top: -12px;
+  top: -22px;
   font-size: 10px;
   color: #ffffff;
 }
@@ -4176,7 +4176,7 @@ a{
     }
 }
 .intl-tel-input{
-  width: 100%;
+  width: 100% !important;
 }
 .intl-tel-input .country-list .country-name{
   display: none;
@@ -4208,4 +4208,7 @@ top: 0px;
 .row__cls{
   flex-wrap: wrap;
   display: flex;
+}
+.value_div{
+  align-items: center;
 }

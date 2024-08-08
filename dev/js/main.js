@@ -295,6 +295,10 @@ var main = {
 
 $(document).ready(function () {
   $(".html5-main-video").css("width", "100% !important");
+  window.onload = function () {
+    var element = document.getElementById('main_video');
+    element.muted = "muted";
+}
   main.hoverImg();
   AOS.init();
   main.contactValidn();

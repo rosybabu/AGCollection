@@ -299,6 +299,21 @@ $(document).ready(function () {
     var element = document.getElementById('main_video');
     element.muted = "muted";
 }
+$('.form-control').on('focus blur change', function (e) {
+	var $currEl = $(this);
+  
+  if($currEl.is('select')) {
+  	if($currEl.val() === $("option:first", $currEl).val()) {
+    	$('.control-label', $currEl.parent()).animate({opacity: 0}, 240);
+      $currEl.parent().removeClass('focused');
+    } else {
+    	$('.control-label', $currEl.parent()).css({opacity: 1});
+    	$currEl.parents('.select_group').toggleClass('focused', ((e.type === 'focus' || this.value.length > 0) && ($currEl.val() !== $("option:first", $currEl).val())));
+    }
+  } else {
+  	$currEl.parents('.select_group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+  }
+}).trigger('blur');
   main.hoverImg();
   AOS.init();
   main.contactValidn();

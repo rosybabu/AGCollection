@@ -4212,3 +4212,19 @@ top: 0px;
 .value_div{
   align-items: center;
 }
+.select-label{
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: translate3d(0, 22px, 0) scale(1);
+  transform-origin: left top;
+  transition: 240ms;
+  line-height: 29px;
+}
+
+.select_group.focused .select-label {
+  opacity: 1;
+  transform: scale(0.75);
+}

@@ -1,13 +1,48 @@
 .ar__theme {
-    header {
-        direction: ltr;
+    .main__logo {
+        padding-right: 2.7%;
+        padding-left: 0;
     }
-
+    .hdr__content{
+        padding: 40px 0 40px 2.7%;
+        position: relative;
+        transition: ease .2s;
+    }
+    .hdr__contentCls{
+        background-color: black;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 0 0% 100% 0%;
+    }
+   
+    
+  
+    .header__menu{
+        right: auto;
+        left: 0;
+        width: 100%;
+    }
+    .menu{
+        border-radius: 0% 0% 100% 0%;
+        left: 0;
+        right: auto;
+    }
+    .menu__list li a{
+        text-align: left;
+    }
     .main__logo.mob-hidden img {
         width: 186px;
         height: 58px;
     }
-
+    .head__social ul li{
+        margin-right: 21px;
+        margin-left: 0px;
+    }
+    .toggle__menu{
+        text-align: left;
+    }
     .btn__hdr {
         width: 160px;
     }
@@ -19,7 +54,13 @@
     .switch {
         display: block;
     }
-
+    .collection__single-project:hover .hover__menuContainer{
+        right: auto;
+        left: 0;
+    }
+    .hover__menuContainer{
+        border-radius: 0 0% 100% 0%;
+    }
     .hdr__btnwrap {
         margin-right: 0;
     }
@@ -168,7 +209,8 @@
     }
 
     .hover__menuContainer {
-        direction: ltr;
+        /* direction: ltr; */
+        text-align: left;
     }
 
     .contact__containerwrap label {
@@ -346,6 +388,17 @@
     }
     .footer__link a:hover, .footer__link p:hover{
         opacity: 1 !important;
+    }
+    .content__right{
+        padding-left: 0px;
+        padding-right: 66px;
+    }
+    .content__left h6{
+        text-align: right;
+    }
+    .content__right ul{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 

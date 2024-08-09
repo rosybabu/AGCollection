@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="uae-ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -8,13 +8,13 @@
     <title>AG-Collections</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/intlTelInput.css">
     <link rel="stylesheet" href="css/styles.css">
-    
-    
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/ar-styles.css">
+
 </head>
 
-<body>
+<body class="ar__theme">
     <main>
         <header>
             <div class="main__hdr">
@@ -97,192 +97,242 @@
             </div>
         </header>
 <div class="main__container">
-    <!-- contact -->
-<div class="contact__container">
-    <div class="contact__containerwrap">
-        <div class="contact__title">Get in touch</div>
-        <div class="contact__row d-flex">
-            <div class="contact__details">
-                <p>address line 1</p>
-                <p>address line 2</p>
-                <p>postcode</p>
-                <div class="contact__email">
-                    <a href="mailto: info@alghuraircollection.com"> info@alghuraircollection.com</a>
-                </div>
-                <div class="contact__phone">
-                    <a href="tel:+555 555 555">+555 555 555</a>
-                </div>
-            </div>
-            <div class="contact__form">
-                <form action="" class="contact-form" id="contactFormUi">
-                    <div class="row__cls">
-                        <div class="wd-100 group">
-                            <!-- <input type="text" required="required"/> -->
-                            <input type="text" class=" contactFormName" id="contactFormName" name="contactFormName"
-                                type="text" placeholder="" data-required="Name is required"
-                                data-alphabetsnspace="Please Enter Only Letters"
-                                data-minLength="Your name must consist of at least 2 characters" required="required" />
-                            <span class="highlight"></span><span class="bar"></span>
-                            <label>Full name*</label>
-                        </div>
-
-                        <!-- email  -->
-                        <div class="wd-50 group">
-                            <input type="email" class="email" id="email" name="email" data-required="Email is required"
-                                placeholder="" required="required" />
-                            <span class="highlight"></span><span class="bar"></span>
-                            <label class="form-label">Email*</label>
-                        </div>
-                        <!-- country -->
-                        <!-- <div class="wd-50 group">
-                            <input type="text" class="contactFormCountry" id="contactFormCountry"
-                                name="contactFormCountry" type="text" placeholder="" data-required="Country is required"
-                                data-alphabetsnspace="Please Enter Only Letters"
-                                data-minLength="Country must consist of at least 2 characters" required="required">
-                            <span class="highlight"></span><span class="bar"></span>
-                            <label class="form-label">Country*</label>
-                        </div> -->
-                        <!-- phone  -->
-                        <div class="wd-50 group">
-                            <input type="number" class="contactFormPhone " id="contactFormPhone" value=""
-                                name="contactFormPhone" placeholder="" data-required="Phone is required"
-                                required="required">
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label class="form-label">Phone number*</label>
-                            
-  
-                        </div>
-                         <!-- interested -->
-                    <div class="wd-50 group select_group">
-                        <label for="contactinterest"  class="select-label">Interested Property Location</label>
-                        <select class=" contactinterest form-control" id="contactinterest"
-                            name="contactinterest" data-required="This is required">
-                            <option value="">Interested Property Location*</option>
-                            <option value="jvc">Weave - JVC</option>
-                            <option value="businessbay">Wedyan - Business Bay</option>
-                        </select>
-                        
-                        <div class="selectarrow">
-                            <img src="images/arrowdown.png" alt="">
-                        </div>
-                    </div>
-                    <div class="wd-50 group">
-                        <select class=" contactinteresttype" id="contactinteresttype"
-                            name="contactinteresttype" data-required="This is required">
-                            <option value="" disabled selected>Interested Property Type*</option>
-                        </select>
-                        <div class="selectarrow">
-                            <img src="images/arrowdown.png" alt="">
-                        </div>
-                    </div>
-                    </div>
-                    <!-- broker  -->
-                    <div class="wd-100 group">
-                        <select class="contactbroker" id="contactbroker"  name="contactbroker"
-                           >
-                            <option value="">Are you a Broker</option>
-                            <option value="1">Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                        <div class="selectarrow">
-                            <img src="images/arrowdown.png" alt="">
-                        </div>
-                    </div>
-                    <!-- hear  -->
-                    <!-- <div class="wd-100 group">
-                        <select class=" contacthear" id="contacthear" name="contacthear"
-                            data-required="This is required">
-                            <option value="">How did you hear about us?*</option>
-                            <option value="1"> Al Ghurair Site</option>
-                            <option value="1">Broker</option>
-                            <option value="1">Google Search</option>
-                            <option value="1">Online Article</option>
-                            <option value="1">Print Article</option>
-                            <option value="2">Referral</option>
-                            <option value="2">Social Media</option>
-                        </select>
-                    </div> -->
-                    <!-- interested -->
-                    <!-- <div class="wd-100 group">
-                        <select class=" contactinterest" id="contactinterest"
-                            name="contactinterest" data-required="This is required">
-                            <option value="">I am interested in*</option>
-                            <option value="3">2 Bedroom Apartment</option>
-                            <option value="3">3 Bedroom Apartment</option>
-                            <option value="2">Penthouse</option>
-                            <option value="3">Sky Villa</option>
-                        </select>
-                    </div> -->
-                    <!-- message  -->
-                    <div class="wd-100 msgBox group">
-                        <textarea placeholder="" class="message contactFormMessage " type="text"
-                            id="contactFormMessage " name="contactFormMessage"
-                           ></textarea>
-                            <span class="highlight"></span><span class="bar"></span>
-                            <label class="form-label">Message</label>
-                    </div>
-                    <div class="contact_formField contact_formsubs">  
-                        <input type="checkbox" id="subs" class="acceptedterms" name="acceptedterms" title="Please check this checkbox" required data-required="Please agree the Terms and  conditions and Privacy policy">
-                        <label for="subs">
-                            I have read and agree to Al Ghurair Collection
-                           <a href="">
-                             Terms of Service 
-                           </a>  and  <a href="">
-                            Privacy Policy
-                           </a>.</label>   
-                    </div>
-                    <div class="contact_formField contact_formsubs">  
-                        <input type="checkbox" id="mailletter" class="mailletter" name="mailletter" title="Please check this checkbox" required data-required="Please agree this field">
-                        <label for="mailletter">
-                            I hereby consent to receive marketing communications from Al Ghurair Collection and its affiliated companies about its products and services via email, SMS, phone call, direct mail, and social media platforms in accordance with our <a href=""> Data Privacy Policy</a>. I understand I can unsubscribe from any mailings at any time by following the instructions in the messages I receive from Al Ghurair Collection.</label>   
-                    </div>
-                    <div class="group input__btn">
-                        <input type="submit" class="btn btn-medium btn-transparent text-black submit__btn"
-                            value="submit">
-                        <div class="button__hover">
-                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.9473 10.3413L25.697 17.094L18.9473 23.8438" stroke="#fff"
-                                    stroke-miterlimit="10"></path>
-                                <path d="M25.697 17.0938H8.69067" stroke="#fff" stroke-miterlimit="10"></path>
-                            </svg>
-                        </div>
-                    </div>
-            </div>
-            </form>
-        </div>
+    <div class="container pg__content">
+    <div class="pg__title">
+        Terms & Conditions
     </div>
-    
-</div>
-<div class="contact__successcontainer">
-    <div class="d-flex">
-        <div class="contact__successimg">
-            <img src="images/contact-success.jpg" alt="">
+    <div class="content__flex d__flex">
+        <div class="content__left">
+            <h6>These are the general Terms & Conditions governing your access and use of the Al Ghurair Properties
+                website and Al Ghurair Properties Tenant and Supervisor Mobile Application and Portal .</h6>
         </div>
-        <div class="contact__successcontent">
-            <h3>oops...</h3>
-            <div class="d-flex"><span class="error__title">
-                Error 404
+        <div class="content__right">
+            <span class="text-uppercase">
+                terms of use
             </span>
-        <span class="error__title">
-            Page not found
+            <p>The website and the Mobile Applications are preserved and operated by Al Ghurair Properties.This page
+                states the terms and conditions entered with the company or any of its associates pertaining to
+                commercial lease, apartments or area in Al Ghurair Properties projects in respect of which this
+                application is used together with any documents they specifically incorporate by reference (“Terms of
+                Use), govern the access to and use of the www.alghurairproperties.com ( “Website and “Tenant Portal”)
+                and Mobile Applications on Appstore. This comprises of any content, services on or from the website ,
+                Mobile applications or the tenant portal. Before accessing the Mobile Applications, Website or the
+                Tenant portal, please read the ‘Terms of Use’ carefully. By accepting those Terms of Use, you agree to
+                abide by these terms and ourown Privacy Policy, found at www.alghurairproperties.com/terms.</p>
+            <p class="text-uppercase">IF YOU DO NOT ACCEPT THE TERMS AND CONDITIONS STATED HERE, PLEASE DO NOT USE THE
+                MOBILE APPLICATIONS, WEBSITE OR THE TENANT PORTAL.</p>
+            <span class="text-uppercase">
+                CHANGES TO THE TERMS OF USE
+            </span>
+            <p>Al Ghurair Properties reserve the right to change the ‘Terms of Use’, and all new changes shall be
+                effective immediately. If you continue to use the Mobile Applications, website or the tenant portal
+                after updating the ‘Terms of Use’, means you agree and accept any of those new changes or modifications.
+                We advise you to keep checking this page regularly to be aware of any changes made to the ‘Terms of
+                Use’.</p>
+            <span class="text-uppercase">
+                ACCESSING THE MOBILE APPLICATION, WEBSITE AND ACCOUNT SECURITY
+            </span>
+
+            <p>We have the right to change or update the mobile applications, website and the Tenant Portal without any
+                prior notice. We can also restrict or block certain access to some parts or all the Mobile applications,
+                website and the tenant portal to any user, including the registered users for any specific reason. You
+                are responsible for ensuring that all other parties who has access to the mobile applications, website
+                or the tenant portal through your private internet connection is aware of these terms of use and should
+                comply with them. You may be asked to provide certain registration details to access the mobile
+                applications, website or when paying for a specific service using personal credit cards or other forms
+                of electronic payment. You should be responsible in providing the correct details including, without
+                limitation, credit card or debt card information. You agree that all the details you will provide on the
+                mobile applications, website or tenant portal is correct, current, and complete without any  missing
+                important information.</p>
+
+            <p>
+                You are responsible in securing your credential details when entering your personal information, such as
+                your user name and password or any other piece of information in the mobile applications, website or in
+                the tenant portal. You accept that your account is private to you and should not agree  to share it to
+                with any individual that you do not trust. You agree to inform us immediately if any unauthorized person
+                tried to access your account by using your username and password. You also should ensure that you sign
+                off from your account when you finish your session to avoid any fraudulent activity targeting your
+                account. DO NOT USE MORE THAN ONE ACCOUNT as it will result in a breach of these Terms of Use. We have
+                the full authority to remove, disable any username or password, whether created by you or provided by us
+                at any time for any or no reason. The mobile application and website is fully secured as it uses SSL
+                technology, hence that, the information can only be viewed by us. If your browser is equipped with SSL,
+                then your transactions will be automatically secured. Please consult your browser’s security
+                specifications if you encounter any issues.
+            </p>
+            <span class="text-uppercase">
+                cookies
+            </span>
+            <p>Cookies are small files that websites place on the computer, and these files are usually read every time
+                you return to the same website. The use of cookies is a regular practice among other websites and
+                portals. You have the choice to accept or reject cookies by just simply deleting them for your browser.
+            </p>
+            <p>We take reasonable measures to protect your personal information from unauthorized access, disclosure,
+                alteration, and destruction. However, no security measures are perfect or impenetrable, and we cannot
+                guarantee the security of your personal information.
+            </p>
+            <span class="text-uppercase">INTELLECTUAL PROPERTY RIGHTS</span>
+            <p>The overall mobile application content, website contents, features (including but not limited to all
+                details, software, copies, imageries, videos and artworks ) are fully owned by Al Ghurair Properties and
+                are strictly protected by the United Arab Emirates and International copyright, trademark, and other
+                intellectual property rights laws. This page states the terms and conditions under which you may use the
+                mobile applications, website for your personal reference only. Please do not copy, change, modify,
+                create plagiarism, reshare, download, save or communicate any of the materials on our mobile
+                application, website or tenant portal, except as follows;</p>
+            <ul>
+                <li>You can store files that are automatically cached by your mobile application, website browser for
+                    display improvement purposes.</li>
+                <li>You can download or print a reasonable number of mobile application screen or pages for your own
+                    personal reference, and not for publication or distribution.</li>
+                <li>Your personal device or computer may store copies in Random- Access Memory ( RAM) after accessing
+                    and reading those materials.</li>
+                <li>You may download a single copy to your mobile devices or personal computer or mobile for your own
+                    personal reference.</li>
+                <li> You can share, repost any social media updates given this feature is available in all social media
+                    channels.</li>
+               
+            </ul>
+            You do not have the right to change copies of any available materials from this mobile application,
+            website or republish any contents from this mobile application or website into another external mobile
+            application or website (print, digital, etc). You are also not allowed to use any illustrations, images,
+            videos or any other artworks, copyright, trademarks from the copies of the materials from the mobile
+            application or website. All rights and contents on this mobile application or website are fully reserved
+            by the company. Any suspicious activities may lead to serious consequences as it violates the
+            copyright,trademark and other laws.
+        </br/>
+            TRADEMARKS<br />
+            Al Ghurair Properties logos, brand names, design, product or service names, slogans are trademarks of the
+            company, and you must not use it without any official written permission from the company.
+            <br />PROHIBITED USES<br />
+            <p>You must use the mobile applications or website only in accordance with these Terms of Use. By reading
+                this, you agree not to use the mobile application or Website;</p>
+            <ul>
+                <li>If you attempt to impersonate the company, or any employee’s identity or any other person or entity
+                    to access the mobile application or website.
+                </li>
+                <li>If you are willing to violate any applicable local or international regulations, including any form
+                    of misuse of electronic payments of credit cards.
+                </li>
+                <li>To participate in restricting anyone to enjoy the use of the mobile application or website or may
+                    harm the company’s mobile application, website or tenant portal by any means.
+                </li>
+                <li>Use any application, or robot to access the mobile application or website back end for any purpose,
+                    including copying or monitoring the materials.
+                </li>
+                <li>Users any applications, or software that harms the functionality of the mobile application
+                    or website
+
+                </li>
+                <li> Use any viruses, worms, or any other harmful activities to damage the Mobile Application and
+                    Website.</li>
+                <li>Use any application, or robot to access the mobile application or website back end for any purpose,
+                    including copying or monitoring the materials.
+
+                </li>
+                <li> Users any applications, or software that harms the functionality of the mobile application
+                    or website</li>
+                <li> Use any viruses, worms, or any other harmful activities to damage the Mobile Application and
+                    Website.</li>
+                <li>Attempt to obtain any unauthorized access or damage any parts of the Mobile Application and Website.
+                </li>
+                <li>Attempt to interfere with the proper working of the Mobile Application and Website.</li>
+                </li>
+            </ul>
+            <span class="text-uppercase">
+                RELIANCE ON INFORMATION POSTED
+            </span>
+            <p>We do not warrant the completeness of the information in the Mobile Application and Website, and any
+                reliance you have on such information is at your own risk. We disclaim all the responsibilities arising
+                from any trust placed on such materials by you or any other user of the Mobile Application and Website,
+                or by anyone who may be notified of any of its contents. Al Ghurair Properties reserve the right,
+                without any liability, to amend or extend anytime the completion date of its projects or the expected
+                complete dates mentioned through the Mobile Application and Website.</p>
+            <span class="text-uppercase">
+
+                UPDATE OF THE MOBILE APPLICATION AND WEBSITE
+            </span>
+            <p>
+                We will be consistently updating the contents on the Mobile Application and Website or in the tenant
+                portal if there are any. Some of the materials on the Mobile Application and Website maybe outdated, and
+                there will be no obligation from our side to update such materials
+
+            </p>
+            <span class="text-uppercase">
+                INFORMATION ABOUT YOU AND YOUR VISITS TO THE MOBILE APPLICATION AND WEBSITE
+            </span>
+            <p>All information we gather in this Mobile Application and Website is subject to our Privacy Policy. By
+                using the Mobile Application and Website, you agree to accept all actions taken by us in accordance to
+                our Privacy Policy.</p>
+            <span class="text-uppercase">
+                GEOGRAPHIC RESTRICTIONS
+            </span>
+            <p>This Mobile Application and Website is operated in the United Arab Emirates; thus, we make no claims that
+                the Mobile Application and Website or any of its content is accessible from outside the country.
+                Accessing the Mobile Application and Website from outside might by illegal by certain individuals in
+                certain countries. If you need to access the Mobile Application and Website from outside the country,
+                you do so on your own responsibility in compliance with the local laws.</p>
+            <span class="text-uppercase">
+                GOVERNING LAW
+            </span>
+            <p>Accessing this Mobile Application and Website make you accept the laws of the United Arab Emirates and
+                the Laws of the Emirates of Dubai</p>
+            <span class="text-uppercase">
+                DISCLAIMER OF WARRANTIES
+            </span>
+            <p>You are aware that we do not guarantee the website or the Mobile Application to be fully free of any
+                harmful viruses or any related worms. You are responsible for implementing any anti-virus software to
+                protect your data input and output.</p>
+            <p class="text-uppercase">
+                AL GHURAIR PROPERTIES WILL NOT BE LIABLE FOR ANY DAMAGES CAUSED BY VIRUSES THAT MAY INFECT YOUR
+                COMPUTER, SOFTWARE PROGRAMS, OR DATA WHILE DOWNLOADING MATERIALS USING THE MOBILE APPLICATION AND
+                WEBSITE. YOU UNDERSTAND THAT THE USE OF THIS MOBILE APPLICATION AND WEBSITE OR THE APP IS AT YOUR OWN
+                RISK, AND THERE ARE NO WARRANTIES PROVIDED BY USNOR ANYONE WORKING WITHIN THE COMPANY SHOULD GIVE ANY
+                WARRANTIES FOR THE SAME MATTER.THE COMPANY DISCLAIMS ALL TYPE OF WARRANTIES AT ALL TIMES.
+            </p>
+            <span class="text-uppercase">
+                LIMITATION ON LIABILITY
+            </span>
+            <p>
+                THE COMPANY, SERVICE PROVIDERS, EMPLOYEES OR TOP MANAGEMENTS ARE NOT RESPONSIBLE FOR DAMAGES OF ANY
+                KIND. ALSO, CONTENT ON THE MOBILE APPLICATION AND WEBSITE OR ANY SERVICES PROVIDED FROM THE MOBILE
+                APPLICATION AND WEBSITE IS NOT BY ANY MEANS RESPONSIBLE IN ANY KIND OF PHYSICAL, EMOITIONAL OR
+                TECHNOLOGICAL DAMAGES TO THE USERS.
+                INDEMNIFICATION
+            </p>
+            <p>You accept to protect, insure and hold harmless the company, licencors and service providers, employees,
+                managers, contractors, suppliers, and licencors.</p>
+            <span class="text-uppercase">
+                GOVERNING LAW AND JURISDICTION
+            </span>
+            <p>Everything related to the Mobile Application and Website and Terms of Use or any claim arising shall be
+                governed by the laws in force in the Emirate of Dubai, United Arab Emirates.</p>
+            <p class="text-uppercase">
+                LIMITATION ON TIME TO FILE CLAIMS. ANY CLAIM YOU MAY HAVE OUT OF THESE TERMS OF USE MUST BE STARTED
+                WITHINbONE YEAR AFTER THE CAUSE OF ACTION.
+            </p>
+            <span class="text-uppercase">
+                ENTIRE AGREEMENT
+            </span>
+            <p>Without prejudice to our rights under these Terms of Use, if you breach agreement and our  Privacy Policy
+                , we may take such action against you.</p>
+        
+
+        <span class="text-uppercase">
+            YOUR COMMENTS AND CONCERNS
         </span>
-    </div>
-    <p>This page does not exist</p>
-    <button class="btnAg btn-border text-black btn_takemeback  ">
-       take me back
-       <div class="button__hover button__black__hover">
-        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-            <path d="M18.9473 10.3413L25.697 17.094L18.9473 23.8438" stroke="#000" stroke-miterlimit="10"></path>
-            <path d="M25.697 17.0938H8.69067" stroke="#000" stroke-miterlimit="10"></path>
-        </svg>
-
-
-    </div>
-     </button>
-        </div>
+        <p>
+            The Mobile Application and Website is fully owned by Al Ghurair Properties If you need any technical support
+            or other inquiries relating to the Mobile Application and Website, you can contact us by emailing us at <a
+                href="">info@alghurairproperties.com</a>
+        </p>
+        <span class="text-uppercase">
+            privacy policy
+        </span>
+        <p>You will not assist or permit any person to pass or show your personal details or personal identity, and you
+            shall take the full responsibility for maintain privacy and security of your own data. Al Ghurair Properties
+            is committed to protecting the privacy of all user’s data and providing a secure technological environment
+            for the use of its Mobile Application and Website. Al Ghurair Properties requests all users to be
+            responsible for safeguarding their personal details and immediately notify Al Ghurair Properties for any
+            unauthorized log in by using your personal information.</p>
     </div>
 </div>
     </div>
@@ -333,11 +383,11 @@
             </ul>
         </div>
         <div class="bottom__footerwrap d-flex">
-             <div class="footer__col">
+            <div class="footer__col">
                 <p><a href="mailto:info@alghuraircollection.com">info@alghuraircollection.com</a></p>
                 <p><a href="tel:+555 555 555">+555 555 555</a></p>
                 <p><a href="tel:+555 444 333">+555 444 333</a></p>
-            </div> 
+            </div>
             <div class="footer__col">
                 <p>Address Line 1</p>
                  <p>   Address Line 2</p>
@@ -379,7 +429,6 @@
 </footer>
 </main>
 <script src="js/temp/bundle.js"></script>
-<script src="js/lib/intlTelInput.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

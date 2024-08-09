@@ -7,7 +7,7 @@
 html,
 body {
   margin: 0px;
-font-family: 'Noto Kufi Arabic';
+  font-family: "Saans TRIAL";
 }
 
 a {
@@ -42,7 +42,7 @@ h6 {
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
-font-family: 'Noto Kufi Arabic';
+  font-family: "Saans TRIAL";
 }
 
 p {
@@ -294,7 +294,7 @@ h6 {
 }
 
 .title1 {
-font-family: 'Noto Kufi Arabic';
+  font-family: "Saans TRIAL";
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -309,7 +309,7 @@ font-family: 'Noto Kufi Arabic';
 }
 
 .title2 {
-font-family: 'Noto Kufi Arabic';
+  font-family: "Saans TRIAL";
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -548,86 +548,173 @@ label {
   left: 0;
 }
 
-
 @font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-Bold.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-Black.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-ExtraBold.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-ExtraBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-ExtraLight.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-Light.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-Medium.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-Thin.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-Regular.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('../fonts/NotoKufiArabic-SemiBold.woff2') format('woff2'),
-      url('../fonts/NotoKufiArabic-SemiBold.woff') format('woff');
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-SemiBold.woff2") format("woff2"), url("../fonts/SaansTRIAL-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-SemiBold.woff2") format("woff2"), url("../fonts/SaansTRIAL-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-SemiBoldItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Medium.woff2") format("woff2"), url("../fonts/SaansTRIAL-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Medium.woff2") format("woff2"), url("../fonts/SaansTRIAL-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Medium.woff2") format("woff2"), url("../fonts/SaansTRIAL-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-LightItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-SemiBoldItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-SemiBoldItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Regular.woff2") format("woff2"), url("../fonts/SaansTRIAL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-MediumItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Regular.woff2") format("woff2"), url("../fonts/SaansTRIAL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-MediumItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Regular.woff2") format("woff2"), url("../fonts/SaansTRIAL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-MediumItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-RegularItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Bold.woff2") format("woff2"), url("../fonts/SaansTRIAL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-RegularItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-RegularItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-SemiBold.woff2") format("woff2"), url("../fonts/SaansTRIAL-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Bold.woff2") format("woff2"), url("../fonts/SaansTRIAL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-BoldItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Bold.woff2") format("woff2"), url("../fonts/SaansTRIAL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-BoldItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-BoldItalic.woff2") format("woff2"), url("../fonts/SaansTRIAL-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Heavy.woff2") format("woff2"), url("../fonts/SaansTRIAL-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Heavy.woff2") format("woff2"), url("../fonts/SaansTRIAL-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url("../fonts/SaansTRIAL-Heavy.woff2") format("woff2"), url("../fonts/SaansTRIAL-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
 .btn__hdr {
@@ -717,8 +804,8 @@ video{
   width: 50%;
   padding: 40px 2.7% 40px 0px;
   box-sizing: border-box;
-  /* background: linear-gradient(to right, transparent 50%, #000 50%) left;
-  background-size: 200%; */
+  background: linear-gradient(to right, transparent 50%, #000 50%) left;
+  background-size: 200%;
   transition: 1s;
 }
 
@@ -880,8 +967,7 @@ video{
 }
 
 .hdr__contentCls {
-  /* background-position: right; */
-  
+  background-position: right;
 }
 .hdr__contentCls .burger:before, .hdr__contentCls .burger:after {
   background: #ffffff;
@@ -898,8 +984,8 @@ video{
   position: absolute;
   height: 0px;
   width: 0px;
-  /* background: #000000;
-  border-radius: 0 0 0 100%; */
+  background: #000000;
+  border-radius: 0 0 0 100%;
   right: 0;
   transition: 1s;
   overflow: hidden;
@@ -1077,7 +1163,7 @@ li:nth-child(1):hover svg path:nth-child(2) {
   margin: 0 auto;
 }
 .footer__container .footer__logo {
-  padding-bottom: 53px;
+  /* padding-bottom: 53px; */
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .footer__container .footer__logo {
@@ -1127,6 +1213,7 @@ li:nth-child(1):hover svg path:nth-child(2) {
   display: inline-block;
   margin-right: 22px;
   transition: .1s ease;
+ 
 }
 .ftr__social li:hover svg {
   fill: #ffffff;
@@ -1310,8 +1397,11 @@ footer .footer__newsinput ::-ms-input-placeholder {
 
 .footer__link a {
   text-decoration: underline;
+  font-size: 14px !important;
 }
-
+.footer__link p{
+  font-size: 14px !important;
+}
 .footer__container  .footer__link p {
   @media only screen and (min-width: 275px) and (max-width: 767px) {
     font-size: 10px;
@@ -1321,10 +1411,12 @@ footer .footer__newsinput ::-ms-input-placeholder {
   }
 }
 
-
+.footer__newsflex {
+  display: none !important;
+}
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .footer__newsflex {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -1351,7 +1443,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
   }
 }
 .homepage__content .homepage__content-left .btnAg {
-  min-width: 183px;
+  min-width: 150px;
   margin-bottom: 20px;
   padding: 9px 14px;
   text-align: left;
@@ -1359,7 +1451,7 @@ footer .footer__newsinput ::-ms-input-placeholder {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .homepage__content .homepage__content-left .btnAg {
-    min-width: 150px;
+    min-width: 120px;
     padding: 3px 10px;
     height: 26px;
     margin-bottom: 15px;
@@ -1699,12 +1791,13 @@ input[type="range"]:focus::-moz-range-thumb {
 .btn__collection {
   border: 1px solid #ffffff;
   margin-top: 30px;
-  min-width: 250px;
+  min-width: 135px;
+  text-align: left;
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .btn__collection {
     text-align: left;
-    min-width: 160px;
+    min-width: 105px;
     height: 24px;
     padding: 3px 10px;
   }
@@ -2105,7 +2198,7 @@ input[type="range"]:focus::-moz-range-thumb {
 }
 .contact__containerwrap input:focus ~ label,
 .contact__containerwrap input:valid ~ label {
-  top: -12px;
+  top: -22px;
   font-size: 10px;
   color: #ffffff;
 }
@@ -2493,7 +2586,7 @@ option {
 }
 .hover__menuContainer .btnAg {
   margin-top: 20px;
-  min-width: 180px;
+  min-width: 150px;
   border: 1px solid #ffffff !important;
   color: #ffffff !important;
   padding: 10px 30px;
@@ -2501,7 +2594,7 @@ option {
 }
 @media only screen and (min-width: 275px) and (max-width: 767px) {
   .hover__menuContainer .btnAg {
-    min-width: 150px;
+    min-width: 110px;
     padding: 3px 15px;
   }
 }
@@ -4054,4 +4147,84 @@ select {
 }
 select:focus+.selectarrow  {
   transform: translateY(-50%) rotate(180deg) !important;
+}
+.ftr__social + p {
+  display: flex;
+a{
+  margin-left: 5px;
+};
+}
+/* phone flag  */
+.input-group > .intl-tel-input.allow-dropdown {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group > .intl-tel-input.allow-dropdown > .flag-container {
+	z-index: 4;
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+    }
+}
+.intl-tel-input{
+  width: 100% !important;
+}
+.intl-tel-input .country-list .country-name{
+  display: none;
+}
+.intl-tel-input ~ label{
+  padding-left: 92px;
+  color: rgba(255, 255, 255, 0.60);
+font-size: 16px;
+font-style: normal;
+font-weight: 380;
+line-height: 26px;
+top: 0px;
+}
+.intl-tel-input .country-list{
+  background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+}
+.intl-tel-input .flag-container{
+  top: -6px !important;
+  height: 36px;
+}
+.intl-tel-input .country-list .country.highlight{
+  background-color: transparent;
+}
+
+.hide {
+  display: none;
+}
+.row__cls{
+  flex-wrap: wrap;
+  display: flex;
+}
+.value_div{
+  align-items: center;
+}
+.select-label{
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: translate3d(0, 22px, 0) scale(1);
+  transform-origin: left top;
+  transition: 240ms;
+  line-height: 29px;
+}
+
+.select_group.focused .select-label {
+  opacity: 1;
+  transform: scale(0.75);
 }

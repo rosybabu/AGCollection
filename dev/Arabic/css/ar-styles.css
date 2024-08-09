@@ -33,6 +33,7 @@
         left: 0;
         right: auto;
         transition: none;
+        background-color: transparent;
     }
     .menu__list li a{
         text-align: left;
@@ -280,12 +281,16 @@
 
     .hover__menuwrap .btnAg {
         text-align: right;
+        min-width: 160px;
+        padding: 10px 20px 10px 40px;
     }
 
     .hover__menuwrap .button__hover svg {
         transform: rotate(180deg);
     }
-
+    .btn__collection{
+        min-width: 200px;
+    }
     .btn_takemeback .button__hover {
         left: 0px;
         right: auto;
@@ -387,12 +392,9 @@
     .backtonews_div svg {
         transform: rotate(180deg);
     }
-    .footer__container .footer__col a:hover,.footer__container .footer__col p:hover{
-        text-decoration: none;
-        opacity: 0;
-    }
-    .footer__link a:hover, .footer__link p:hover{
-        opacity: 1 !important;
+    .selectarrow{
+        left: 10px;
+        right: auto;
     }
     .content__right{
         padding-left: 0px;

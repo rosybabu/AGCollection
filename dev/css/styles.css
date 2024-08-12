@@ -4711,28 +4711,15 @@ only screen and (min-resolution: 2dppx) {
   align-items: center;
 }
 
-.select-label {
+select + label{
+  top: 5px;
   font-size: 16px;
-  font-weight: 400;
-  opacity: 1;
-  pointer-events: none;
-  position: absolute;
-  transform: translate3d(0, 22px, 0) scale(1);
-  transform-origin: left top;
-  transition: 240ms;
-  line-height: 29px;
 }
 
-.select_group.focused .select-label {
-  opacity: 1;
-  top: -35px !important;
-  font-size: 10px !important;
-  color: #ffffff !important;
-}
 
 select:focus+label,select:valid+label {
-  top: -10px !important;
-  font-size: 10px !important;
+  top: -10px;
+  font-size: 10px;
   color: #ffffff !important;
   transition: 0.2s ease all;
 }

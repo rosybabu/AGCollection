@@ -179,7 +179,31 @@ var main = {
   },
   //4.Function to implement contactform validation
   contactValidn: function () {
-    $("#contactForm").validate({
+    $(function () {
+      $('#contactFormPhone').intlTelInput({
+          autoHideDialCode: true,
+          autoPlaceholder: "OFF",
+          // dropdownContainer:$(".intl-tel-input"),
+          formatOnDisplay: true,
+         hiddenInput: "full_number",
+          initialCountry: "ae",
+        //  nationalMode: true,
+          placeholderNumberType: "MOBILE",
+          // preferredCountries: ['us','gb','in'],
+          separateDialCode: true,
+          fixDropdownWidth:true,
+          formatAsYouType:true,
+          countrySearch:true,
+          validationNumberType: 'MOBILE',
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+      
+      $(".contactFormPhone").focus(function(){
+       $(this).parents(".group").find("label").hide();
+      });
+    });
+    
+    $("#contactFormUi").validate({
       rules: {
         contactFormName: {
           required: true,
@@ -275,12 +299,30 @@ $(document).ready(function () {
     var element = document.getElementById('main_video');
     element.muted = "muted";
 }
+
+// $('.form-control').on('focus blur change', function (e) {
+// 	var $currEl = $(this);
+  
+//   if($currEl.is('select')) {
+//   	if($currEl.val() === $("option:first", $currEl).val()) {
+//     	$('.control-label', $currEl.parent()).animate({opacity: 0}, 240);
+//       $currEl.parent().removeClass('focused');
+//     } else {
+//     	$('.control-label', $currEl.parent()).css({opacity: 1});
+//     	$currEl.parents('.select_group').toggleClass('focused', ((e.type === 'focus' || this.value.length > 0) && ($currEl.val() !== $("option:first", $currEl).val())));
+//     }
+//   } else {
+//   	$currEl.parents('.select_group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+//   }
+// }).trigger('blur');
+  main.hoverImg();
   AOS.init();
+  main.contactValidn();
   main.humburger();
   main.slider();
-  // main.video();
-  // main.contactValidn();
-  main.hoverImg();
+  main.video();
+  
+ 
   // phone number regex 
   $.validator.addMethod(
     "uaePhone",
@@ -323,6 +365,9 @@ $('#contactinterest').on('change', function() {
      $('#contactinteresttype').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
   }
 });
+
+
+
 
 })
 

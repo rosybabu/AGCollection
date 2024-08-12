@@ -4730,22 +4730,13 @@ only screen and (min-resolution: 2dppx) {
   color: #ffffff !important;
 }
 
-select:focus+label {
-  top: -22px !important;
+select:focus+label,select:valid+label {
+  top: -10px !important;
   font-size: 10px !important;
   color: #ffffff !important;
+  transition: 0.2s ease all;
 }
-/* select:valid:not(focus)+label{
-  top: 0px !important;
-} */
-select.validcls+label{
-  top: -32px !important;
-  font-size: 10px !important;
-  color: #ffffff !important;
-}
-select + label{
-  top: -8px !important;
-}
+
 select option:nth-child(1){
-  /* display: none; */
-}
+   display: none;
+} 

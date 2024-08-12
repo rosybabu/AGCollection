@@ -300,21 +300,21 @@ $(document).ready(function () {
     element.muted = "muted";
 }
 
-$('select').on('focus blur change', function (e) {
-	var $currEl = $(this);
+// $('select').on('click focus blur ', function (e) {
+// 	var $currEl = $(this);
   
-  if($currEl.is('select')) {
-  	if($currEl.val() === $("option:first", $currEl).val()) {
-    	$('.select-label', $currEl.parent()).animate({opacity: 0}, 240);
-      $currEl.parent().removeClass('focused');
-    } else {
-    	$('.select-label', $currEl.parent()).css({opacity: 1});
-    	$currEl.parents('.select_group').toggleClass('focused', ((e.type === 'focus' || this.value.length > 0) && ($currEl.val() !== $("option:first", $currEl).val())));
-    }
-  } else {
-  	$currEl.parents('.select_group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
-  }
-}).trigger('blur');
+//   if($currEl.is('select')) {
+//   	if($currEl.val() === $("option:first", $currEl).val()) {
+//     	$('.select-label', $currEl.parent()).animate({opacity: 0}, 240);
+//       $currEl.parent().removeClass('focused');
+//     } else {
+//     	$('.select-label', $currEl.parent()).css({opacity: 1});
+//     	$currEl.parents('.select_group').toggleClass('focused', ((e.type === 'focus' || this.value.length > 0) && ($currEl.val() !== $("option:first", $currEl).val())));
+//     }
+//   } else {
+//   	$currEl.parents('.select_group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+//   }
+// }).trigger('blur');
   main.hoverImg();
   AOS.init();
   main.contactValidn();
